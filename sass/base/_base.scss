@@ -1,6 +1,6 @@
-// html {
-//   box-sizing: border-box;
-// }
+html {
+  box-sizing: border-box;
+}
 
 *,
 *::before,
@@ -8,11 +8,9 @@
   box-sizing: inherit;
 }
 
-// body {
-//   background-color: $primary-white-color;
-//   color: $txt-primary-color;
-//   font-family: $primary-font;
-// }
+body {
+  background-color: $primary-white-color;
+}
 
 a {
   text-decoration: none;

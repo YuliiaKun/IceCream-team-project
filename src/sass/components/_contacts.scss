@@ -1,0 +1,157 @@
+
+.section-contacts{
+    background: #FFF5F6;
+}
+.container{
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 10px;
+        padding-left: 10px;
+        outline: 2px solid red;
+
+        @media screen and (min-width: 320px) {
+            width: 320px;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+}
+.contacts-tittle {
+    font-family:$primary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+        display: inline-block;
+    letter-spacing: 0.04em;
+    
+    color:$primary-white-color;
+background-color: $bgr-beige-color;
+padding-left: 24px;
+padding-right: 24px;
+border-radius: 4px;
+margin: 0px
+}
+
+.food {
+    background-color: $bgr-green-color;
+
+}
+.contacts-card {
+    max-width: 100%;
+    height: 427px;
+    padding-top: 40px;
+    padding-bottom: 43px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border:1px solid #e1e1e1;
+    border-radius: 24px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
+.contacts-card p{
+    display: block; 
+}
+.contacts-card:not(:last-child){
+    margin-bottom: 20px;
+
+}
+.contacts-location {
+    margin-top: 22px;
+    // margin-bottom: 25px;
+position: relative;
+    & h4{
+        // position: relative;
+// width: 57.01px;
+// height: 22px;
+// left: 70px;
+// top: 5204px;
+display:inline-block ;
+font-family: $primary-font;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 1.86;
+letter-spacing: 0.04em;
+color: $txt-dark-color;
+margin: 0px;
+margin-bottom: 10px;
+    }
+
+    & p{ 
+        // position: relative;   
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        color:$txt-light-color;
+        margin-top:0px;
+        margin-bottom: 0px; 
+        padding-bottom: 25px
+    }
+}
+
+    .contacts-worktime{
+        position: relative;
+        margin-top: 25px;
+    }
+    .contacts-worktime .worktime-list:first-child{
+        margin-bottom: 10px;
+.worktime-list{
+    position: relative;
+}
+
+    }
+    .contacts-day{
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        color: $txt-dark-color;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+    }
+     
+    .contacts-time{
+font-family: $primary-font;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 1.86;
+color:$txt-primary-color;
+        margin-top: 0px;    
+        margin-bottom: 0px;
+    }
+
+    .contacts-location::after{
+        content: "";
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+    }
+
+    .contacts-info{
+    position: relative;
+    padding-top: 25px;
+    }
+    .contacts-info::before{
+        content: "";
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+    }
+    .contacts-info p{
+        margin: 0px;
+        padding-top: 25px;
+        font-family: $primary-font;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 1.5;
+color:$txt-light-color;
+    }

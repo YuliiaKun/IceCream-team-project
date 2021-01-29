@@ -1,53 +1,78 @@
-// .footer{
-//     font-family: $accent-font;
-// }
-
-.tagline{
-    text-transform: uppercase;
-    font-family: $accent-font;
-    font-weight: 400;
-    font-style: normal;
-    &h3 {
-        font-size: 18px;
-        color: #ffa5ba;
+@media screen and (max-width: 768px) {
+    .footer{
+        background: #FFF5F6;
     }
-    &h2 {
-        font-size: 34px;
+
+    .tagline{
+        text-transform: uppercase;
+        font-family: $accent-font;
+        font-weight: 400;
+        font-style: normal;
+        padding: 0px 31px 43px 20px;
+        & h3 {
+            font-size: 18px;
+            color: #ffa5ba;
+        }
+        & h2 {
+            font-size: 34px;
+            color: #d41443;
+        }
+    }
+
+    // .footer-social-icons{
+    //     font-family: Titan One;
+    // }
+
+    .icon-box{
+        display: flex;
+        padding: 0px 21px 0px 147px;
+    }
+
+    .icon-item:not(:last-child){
+        padding-right: 28px;
+    }
+
+    // .icon-link{
+    //     font-family: Titan One;
+    // }
+
+    // .social-icon{
+    //     font-family: Titan One;
+    // }
+
+    .contact{
+        display: inline;
+        font-family: DM Sans;
+        text-align: right;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        white-space: nowrap;
+        //padding: 0px 20px 65px 70px;
+        padding-bottom: 43px;
+        //padding: 0px 21px 46px 43px;
+        //padding-right: 21px;
+    }
+
+
+    .cell-footer{
+        text-decoration: none;
         color: #d41443;
+        padding-right: 20px;
+        //padding-bottom: 43px;
     }
+
+    .copyright{
+        border-top: 1px solid #E1E1E1;
+        padding: 22px 91px 18px 79px ;
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 152%;
+        text-align: center;
+        color: #907E82;
+    }
+
 }
-
-// .footer-social-icons{
-//     font-family: Titan One;
-// }
-
-// .icon-box{
-//     font-family: Titan One;
-// }
-
-// .icon-item{
-//     font-family: Titan One;
-// }
-
-// .icon-link{
-//     font-family: Titan One;
-// }
-
-// .social-icon{
-//     font-family: Titan One;
-// }
-
-// .contact{
-//     font-family: Titan One;
-// }
-
-// .cell-footer{
-//     font-family: Titan One;
-// }
-
-.copyright{
-    font-family: Titan One;
-}
-
-
 

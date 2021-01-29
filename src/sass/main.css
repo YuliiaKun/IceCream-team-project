@@ -79,10 +79,6 @@ img {
   }
 }
 
-.footer {
-  font-family: "Titan One", cursive;
-}
-
 .tagline {
   text-transform: uppercase;
   font-family: "Titan One", cursive;
@@ -98,34 +94,6 @@ img {
 .taglineh2 {
   font-size: 34px;
   color: #d41443;
-}
-
-.footer-social-icons {
-  font-family: Titan One;
-}
-
-.icon-box {
-  font-family: Titan One;
-}
-
-.icon-item {
-  font-family: Titan One;
-}
-
-.icon-link {
-  font-family: Titan One;
-}
-
-.social-icon {
-  font-family: Titan One;
-}
-
-.contact {
-  font-family: Titan One;
-}
-
-.cell-footer {
-  font-family: Titan One;
 }
 
 .copyright {

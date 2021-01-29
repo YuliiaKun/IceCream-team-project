@@ -5,3 +5,20 @@
   height: 40px;
   padding: 0;
 }
+@media screen and (min-width: 768px) {
+  .product-list {
+    display: flex;
+  }
+  .product-list .item {
+    width: 220px;
+  }
+  .product-list .item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product-list .item {
+    width: 335px;
+  }
+}

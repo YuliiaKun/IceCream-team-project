@@ -1,0 +1,53 @@
+.footer{
+    font-family: $accent-font;
+}
+
+.tagline{
+    text-transform: uppercase;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-style: normal;
+    &h3 {
+        font-size: 18px;
+        color: $txt-primary-color;
+    }
+    &h2 {
+        font-size: 34px;
+        color: $accent-color;
+    }
+}
+
+.footer-social-icons{
+    font-family: Titan One;
+}
+
+.icon-box{
+    font-family: Titan One;
+}
+
+.icon-item{
+    font-family: Titan One;
+}
+
+.icon-link{
+    font-family: Titan One;
+}
+
+.social-icon{
+    font-family: Titan One;
+}
+
+.contact{
+    font-family: Titan One;
+}
+
+.cell-footer{
+    font-family: Titan One;
+}
+
+.copyright{
+    font-family: Titan One;
+}
+
+
+

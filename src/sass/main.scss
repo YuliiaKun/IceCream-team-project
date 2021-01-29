@@ -5,11 +5,11 @@
 
 // Стили для файла с примером HTML-фрагмента
 @import './utils/variables';
+@import './utils/visually-hidden';
 
 @import './base/base';
-@import './utils/visually-hidden';
 @import './base/container';
 
 @import './components/exem';
-@import './components/footer.scss';
+@import './components/footer';
 

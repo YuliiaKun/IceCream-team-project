@@ -1,0 +1,17 @@
+.header {
+  background-color: $bgr-primary-color;
+}
+
+.nav-hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  & .logo {
+    margin-right: 50px;
+  }
+}

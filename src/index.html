@@ -11,14 +11,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
 </head>
 <body>
-<include src="./partials/product.html"></include>
-    <header></header>
-    
-    <main></main>
+
+      <include src="./partials/header.html"></include>
+  
+    <main>
+        <include src="./partials/hero.html"></include>
+        <include src="./partials/product.html"></include>
+        <include src="./partials/feedback.html"></include>
+
+    </main>
     
     <footer></footer>
     
 <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
 <script src="./index.js"></script>
+<script src="./menu.js"></script>
+
 </body>
 </html>

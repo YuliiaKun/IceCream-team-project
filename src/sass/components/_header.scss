@@ -1,0 +1,238 @@
+.header {
+  position: relative;
+  background-color: $bgr-primary-color;
+  font-style: $primary-font;
+}
+
+.nav-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  &.section {
+    padding-top: 37px;
+    padding-bottom: 15px;
+    @media screen and (max-width: 767px) {
+      padding-top: 6px;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  & .logo {
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 280px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 90px;
+    }
+
+    & img {
+      min-width: 199px;
+    }
+  }
+}
+
+.nav-menu {
+  margin-top: 123px;
+
+  @media screen and (max-width: 1199px) {
+    & .list-item {
+      border-top: 1px solid #e18298;
+      &:last-child {
+        border-bottom: 1px solid #e18298;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 0;
+
+    & .list-item:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+}
+
+.nav-menu a {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  text-align: center;
+  //font-style: $primary-font;
+  //font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3125; /* identical to box height 21px*/
+  color: $primary-white-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &.is-current {
+    color: $accent-color;
+  }
+}
+
+.menu-button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+    position: absolute;
+  }
+  @media screen and (max-width: 1199px) {
+    &.is-open {
+      position: absolute;
+      z-index: 12;
+      right: 34px;
+      top: 23px;
+    }
+
+    & .icons {
+      display: block;
+    }
+
+    &.is-open .icon-close {
+      display: block;
+    }
+
+    &.is-open .icon-menu {
+      display: none;
+    }
+
+    & .icon-close {
+      display: none;
+    }
+
+    .icons {
+      fill: #000000;
+    }
+
+    &:hover .icons,
+    &:focus .icons {
+      fill: #000;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+    position: absolute;
+  }
+}
+
+.menu-container {
+  @media screen and (max-width: 1199px) {
+    background-color: $bgr-menu-color;
+  }
+
+  @media screen and (max-width: 1199px) {
+    &.is-open {
+      display: block;
+      transform: translateX(0);
+    }
+
+    display: block; //display: none;
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    transform: translateX(101%);
+    transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+// === Кнопки ==========================
+.hero-button.button {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 60px;
+    right: 34px;
+    padding-left: 44px;
+    padding-right: 44px;
+
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    &.is-open {
+      display: block;
+      position: absolute;
+      padding-left: 44px;
+      padding-right: 44px;
+      top: 60px;
+      right: 34px;
+      z-index: 12;
+      opacity: 1;
+      transition: opacity 200ms cubic-bezier(0, 0, 0.94, -0.06) 200ms;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &.is-open {
+      display: block;
+      position: absolute;
+      padding-left: 44px;
+      padding-right: 44px;
+      top: 60px;
+      right: 34px;
+      z-index: 12;
+      transition: translate 250ms 200s;
+    }
+  }
+}
+
+.button {
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 37px;
+  padding-right: 37px;
+
+  background: $primary-white-color;
+  color: $accent-color;
+  border-radius: 22px;
+  border: 0 solid transparent;
+
+  text-align: center;
+  font-style: $primary-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3125; /* identical to box height 21px*/
+}
+
+.is-inverted {
+  background: $accent-color;
+  color: $primary-white-color;
+}

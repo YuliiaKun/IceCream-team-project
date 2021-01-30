@@ -173,9 +173,11 @@
     .footer{
         background: #FFF5F6;
     }
+
     .footer-info{
         display: flex;
         justify-content: space-between;
+        padding: 165px 120px 97px 114px;
     }
 
     .tagline{
@@ -193,7 +195,7 @@
             color: #d41443;
         }
     }
-    .tagline-part-1-tablet{
+    .tagline-part-1{
         display: block;
     }
 
@@ -223,6 +225,7 @@
         padding-top: 20px;
         //justify-content: right;
         text-align: right;
+        //padding-right: 120px;
     }
     .contact{
         display: inline;
@@ -246,7 +249,7 @@
 
     .copyright{
         border-top: 1px solid #E1E1E1;
-        padding: 22px 91px 18px 79px ;
+        padding: 9px 91px 10px 79px ;
         font-family: DM Sans;
         font-style: normal;
         font-weight: bold;

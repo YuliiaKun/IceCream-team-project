@@ -1,0 +1,117 @@
+// hero
+// Mobile 320
+
+@media screen and (min-width: 320px) {
+  .container {
+    margin: 0px;
+  }
+  .hero {
+    position: relative;
+    min-width: 320px;
+    height: 502px;
+    background-color: $bgr-primary-color;
+    // background-image: url(../../src/images/mobile/header_ice_cream.png);
+    // background-repeat: no-repeat;
+    // background-size: 171px 410px;
+    // background-position: top 92px left 110px;
+  }
+  .circle {
+    position: absolute;
+    width: 346px;
+    height: 344px;
+    top: 88px;
+    left: 37px;
+    background-color: $txt-primary-color;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .hero-img {
+    position: absolute;
+    width: 171px;
+    height: 410px;
+    top: 4px;
+    left: 73px;
+    z-index: 2;
+  }
+
+  // временная заглушка для хедера
+  .header-perm {
+    height: 61px;
+  }
+
+  .hero-title {
+    position: absolute;
+    display: inline-block;
+    top: 198px;
+    left: 21px;
+    z-index: 3;
+    margin: 0px;
+
+    font-family: $accent-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+
+  .title-part {
+    font-family: $accent-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 96.5%;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+
+  .hero-text {
+    display: none;
+  }
+  .list-item {
+    display: none;
+  }
+  .btn-arrow {
+    display: none;
+  }
+
+  .btn {
+    display: flex;
+  }
+  .hero-btn {
+    position: absolute;
+    display: block;
+    z-index: 3;
+    width: 62.4px;
+    height: 24px;
+    background-color: $accent-color;
+    border-radius: 20px;
+    border: 0 solid transparent;
+
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: auto;
+    padding-left: 13px;
+    top: 323px;
+    left: 21px;
+
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 1.25;
+    color: $primary-white-color;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-btn.second {
+    width: 83px;
+    left: 91.5px;
+    background-color: $primary-white-color;
+    color: $accent-color;
+  }
+}

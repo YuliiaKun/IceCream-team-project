@@ -42,9 +42,7 @@
 }
 
 .nav-menu {
-  //@media screen and (max-width: 1199px) {
-  // display: none;
-  //}
+  margin-top: 123px;
 
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -77,6 +75,7 @@
 
 .menu-button {
   display: block;
+
   //margin-left: auto;
   @media screen and (min-width: 1200px) {
     display: none;
@@ -91,16 +90,19 @@
   background-color: transparent;
 
   @media screen and (max-width: 1199px) {
+    &.is-open {
+      position: absolute;
+      z-index: 12;
+      right: 34px;
+      top: 23px;
+    }
+
     & .icons {
       display: block;
     }
 
     &.is-open .icon-close {
       display: block;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      z-index: 9;
     }
 
     &.is-open .icon-menu {
@@ -140,8 +142,7 @@
     position: absolute;
     z-index: 11;
     top: 0;
-    //right: 0;
-    left: 0;
+    right: 0;
     width: 250px;
     height: 100vh;
 

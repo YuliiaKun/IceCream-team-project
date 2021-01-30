@@ -2,6 +2,11 @@
   position: relative;
   background-color: $bgr-primary-color;
   font-style: $primary-font;
+  overflow: hidden;
+
+  &.is-open {
+    overflow: visible;
+  }
 }
 
 .nav-hero {
@@ -66,6 +71,10 @@
       margin-right: 35px;
     }
   }
+
+  & .list-item {
+    display: block;
+  }
 }
 
 .nav-menu a {
@@ -93,7 +102,11 @@
 }
 
 .menu-button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
   margin: 0;
   padding: 0;
   border: none;

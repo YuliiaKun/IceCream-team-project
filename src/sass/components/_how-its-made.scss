@@ -1,0 +1,70 @@
+.how-its-made {
+  padding-top: 125px;
+  padding-bottom: 150px;
+  background-color: $bgr-light;
+}
+.title-first {
+  font-family: $accent-font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: $txt-primary-color;
+}
+.title-second {
+  font-family: $accent-font;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+.btn {
+  min-width: 176px;
+  height: 44px;
+  background: $primary-white-color;
+  border-radius: 22px;
+  border: 0;
+
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  align-items: center;
+  text-align: center;
+  color: $accent-color;
+}
+.text-first {
+  background-image: url('../images/mobile/background_milk.png');
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: $txt-dark-color;
+}
+.text-second {
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: $txt-light-color;
+}
+.number {
+  font-family: $accent-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+.text {
+  font-family: $primary-font;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.67;
+  color: $txt-dark-color;
+}

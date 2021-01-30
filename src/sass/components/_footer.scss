@@ -25,7 +25,8 @@
 
     .icon-box{
         display: flex;
-        padding: 0px 21px 0px 147px;
+        padding: 0px 21px 46px 147px;
+        //padding-bottom: 46px
     }
 
     .icon-item:not(:last-child){
@@ -48,8 +49,8 @@
         font-weight: bold;
         font-size: 12px;
         white-space: nowrap;
-        //padding: 0px 20px 65px 70px;
-        padding-bottom: 43px;
+        //padding: 0px 20px 43px 0px;
+        //padding-bottom: 43px;
         //padding: 0px 21px 46px 43px;
         //padding-right: 21px;
     }
@@ -59,7 +60,8 @@
         text-decoration: none;
         color: #d41443;
         padding-right: 20px;
-        //padding-bottom: 43px;
+        padding-bottom: 43px;
+        //padding: 0px 20px 43px 0px;
     }
 
     .copyright{

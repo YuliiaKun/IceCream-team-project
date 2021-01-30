@@ -57,7 +57,7 @@
 .hero-text {
   display: none;
 }
-.list-item {
+.list {
   display: none;
 }
 .btn-arrow {
@@ -66,10 +66,10 @@
 .hero-milk {
   display: none;
 }
+.hero-girl {
+  display: none;
+}
 
-// .btn {
-//   // display: flex;
-// }
 .hero-btn {
   position: absolute;
   display: block;
@@ -105,11 +105,21 @@
   color: $accent-color;
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+  background: $btn-hover-color;
+}
+
+.hero-btn.second:hover,
+.hero-btn.second:hover {
+  background: $btn-hover-color-light;
+}
+
 // @media screen and (min-width: 320px) {
 // }
 
 // tablet
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .hero {
     height: 399px;
   }
@@ -182,10 +192,23 @@
     padding: 0px;
   }
 
-  .list-item {
+  .list {
+    position: absolute;
     display: block;
+    top: 96px;
+    left: 683px;
   }
-  .hero-figures {
+  .list-item {
+    position: relative;
+    z-index: 2;
+  }
+  .list-item:not(:last-child) {
+    margin-bottom: 13px;
+  }
+
+  .list-figures {
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-family: $accent-font;
     font-style: normal;
     font-weight: normal;
@@ -195,5 +218,135 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $accent-color;
+  }
+  .list-item:after {
+    content: '';
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: -5%;
+    left: 80%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: $primary-white-color;
+  }
+
+  .list-text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 150%;
+    color: $primary-white-color;
+    text-align: right;
+  }
+
+  .hero-girl {
+    display: block;
+    position: absolute;
+    top: 266px;
+    left: 566px;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1280px;
+    height: 665px;
+  }
+  .hero-title {
+    top: 172px;
+    left: 114px;
+
+    font-size: 38px;
+    line-height: 1.16;
+  }
+
+  .title-part {
+    font-size: 58px;
+    line-height: 90.5%;
+  }
+  .circle {
+    width: 538px;
+    height: 538px;
+    top: 53px;
+    left: 474px;
+  }
+
+  .hero-img {
+    width: 236px;
+    height: 557px;
+    top: 56px;
+    left: 119px;
+  }
+
+  .hero-btn {
+    width: 104px;
+    height: 40px;
+    top: 334px;
+    left: 114px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: auto;
+    padding-left: 22px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .hero-btn.second {
+    left: 233px;
+    width: 138px;
+  }
+
+  .hero-milk {
+    display: block;
+    position: absolute;
+    width: 188px;
+    height: 191px;
+    top: 430px;
+    left: 76px;
+  }
+
+  .hero-text {
+    width: 200px;
+    height: 78px;
+    top: 486px;
+    left: 294px;
+
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .btn-arrow {
+    top: 584px;
+    left: 294px;
+  }
+  .hero-girl {
+    width: 293px;
+    height: 232px;
+    top: 434px;
+    left: 877px;
+  }
+
+  .list {
+    top: 157px;
+    left: 1110px;
+  }
+
+  .list-figures {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+  .list-text {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .list-item:after {
+    width: 30px;
+    height: 30px;
   }
 }

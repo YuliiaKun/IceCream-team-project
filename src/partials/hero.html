@@ -45,30 +45,57 @@
 </header>
 
 <div class="container">
-<div class="header-perm"></div>
-<h1 class="hero-title">
-ice cream <br> made with <br> <span class="title-part">passion</span> 
-</h1> 
-<div class="circle">
-    <img class="hero-img" src="../src/images/mobile/header_ice_cream.png" alt="ice cream">
-</div>
-<div class="btn">
-    <a class="hero-btn" href="#">Products</a>
-    <a class="hero-btn second" href="#">How it’s made?</a>
-</div>
-<p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-<button class="btn-arrow">
-<!-- href="./images/arrow-right.png" -->
-</button>
-<ul >
-    <li class="list-item">
-        <p class="hero-figures">16</p>
-        <p class="hero-text">cafes</p>
-    </li>
-    <li class="list-item">
-        <p class="hero-figures">23</p>
-        <p class="hero-text">food trucks</p>
-    </li>
-</ul>
+    <h1 class="hero-title">
+        ice cream <br> made with <br> <span class="title-part">passion</span>
+    </h1>
+    <div class="circle">
+        <picture class="hero-img">
+            <source
+                srcset="../src/images/mobile/header_ice_cream.png 1x, ../src/images/mobile/header_ice_cream@2x.png 2x"
+                media="(max-width: 767px)">
+            <source
+                srcset="../src/images/tablet/header_ice_cream.png 1x, ../src/images/tablet/header_ice_cream@2x.png 2x"
+                media="(min-width: 768px)">
+            <source
+                srcset="../src/images/desctop/header_ice_cream.png 1x, ../src/images/desctop/header_ice_cream@2x.png 2x"
+                media="(min-width: 1200px)">
+            <img class="hero-img-min"  src="../src/images/desctop/header_ice_cream.png" alt="ice cream">
+        </picture>
+    </div>
+    <!-- <div class="btn"> -->
+    <a class="hero-btn" href="#our-products">Products</a>
+    <a class="hero-btn second" href="#how-its-made">How it’s made?</a>
+    <!-- </div> -->
+    <picture class="hero-milk">
+        <source srcset="../src/images/tablet/header_milk.png 1x, ../src/images/tablet/header_milk@2x.png 2x"
+            media="(min-width: 768px)">
+        <source srcset="../src/images/desctop/header_milk.png 1x, ../src/images/desctop/header_milk@2x.png 2x"
+            media="(min-width: 1200px)">
+        <img class="hero-img-min" src="../src/images/tablet/header_milk.png" alt="jug with milk">
+    </picture>
+    <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et</p>
+    <button class="btn-arrow">
+        <img src="../src/images/arrow-right.png" alt="arrow" width="18" height="18">
+    </button>
+    <ul class="list">
+        <li class="list-item">
+            <p class="list-figures">16</p>
+            <p class="list-text">cafes</p>
+            <span class="circle-small"></span>
+        </li>
+        <li class="list-item">
+            <p class="list-figures">23</p>
+            <p class="list-text">food trucks</p>
+            <span class="circle-small"></span>
+        </li>
+    </ul>
+    <picture class="hero-girl">
+        <source srcset="../src/images/tablet/header_girl.png 1x, ../src/images/tablet/header_girl@2x.png 2x"
+            media="(min-width: 768px)">
+        <source srcset="../src/images/desctop/header_girl.png 1x, ../src/images/desctop/header_girl@2x.png 2x"
+            media="(min-width: 1200px)">
+        <img class="hero-img-min" src="../src/images/tablet/header_girl.png" alt="girl">
+    </picture>
 </div>
 </section>

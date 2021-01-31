@@ -5,10 +5,14 @@
 
 .hero {
   position: relative;
-  height: 502px;
+
   background-color: $bgr-primary-color;
   overflow: hidden;
 }
+.hero-section {
+  height: 563px; //добавил высоту диву, т.к. он абсолют и контейнер не тянулся вниз
+}
+
 .circle {
   position: absolute;
   width: 346px;
@@ -59,7 +63,8 @@
 .hero-text {
   display: none;
 }
-.list {
+.hero-section .list {
+  // добавил специфичности, что общий класс .лист не переопределялся у всех
   display: none;
 }
 .btn-arrow {
@@ -194,17 +199,20 @@
     padding: 0px;
   }
 
-  .list {
+  .hero-section .list {
+    // добавил специфичности
     position: absolute;
     display: block;
     top: 23.56%;
     left: 88.93%;
     z-index: 3;
   }
-  .list-item {
+  .hero-section .list-item {
+    //доб. спец.
     position: relative;
   }
-  .list-item:not(:last-child) {
+  .hero-section .list-item:not(:last-child) {
+    //доб. спец.
     margin-bottom: 13px;
   }
 
@@ -259,7 +267,7 @@
 
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1280px;
+    min-width: 1280px; //from max to min
     height: 665px;
   }
   .hero-title {

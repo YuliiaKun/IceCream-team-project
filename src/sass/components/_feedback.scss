@@ -57,10 +57,12 @@
 }
 
 .feedback-text {
-  background-image: linear-gradient(#e1e1e1, #e1e1e1);
-  background-position: 0 100%;
-  background-size: 100% 1px;
-  background-repeat: repeat-x;
+  background-image: repeating-linear-gradient(
+    0deg,
+    #e1e1e1 0 1px,
+    transparent 1px 30px
+  );
+  padding: 0 20px;
 
   font-family: $primary-font;
   font-weight: 500;
@@ -73,7 +75,6 @@
 
   @media screen and (min-width: 768px) {
     margin-top: 19px;
-    padding: 30px 40px;
 
     font-size: 14px;
     line-height: 2.14;
@@ -84,7 +85,6 @@
 
   @media screen and (min-width: 1200px) {
     margin-top: 15px;
-    padding: 32px 50px;
 
     font-size: 16px;
     line-height: 1.86;
@@ -100,17 +100,17 @@
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    top: -13%;
-    right: 83%;
+    top: -6%;
+    right: 62%;
     z-index: -1;
 
     @media screen and (min-width: 768px) {
-      top: 6%;
-      right: 82%;
+      top: -18%;
+      right: 93%;
     }
     @media screen and (min-width: 1200px) {
-      top: 13%;
-      right: 90%;
+      top: -23%;
+      right: 94%;
     }
   }
 }

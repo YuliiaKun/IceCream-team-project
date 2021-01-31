@@ -4,12 +4,12 @@
     
 <header class="header" data-header-button>
     <div class="container">
-        <div class="nav-hero section">
+        <div class="nav-hero">
             <nav class="nav">
 
                 <!-- Лого -->
                 <a class="logo" href="./index.html">
-                    <img src="./images/desctop/logo.png" srcset="./images/desctop/logo@2x.png 2x" alt="ICECREAM logo"
+                    <img src="./images/desctop/logo.png" srcset="./images/desctop/logo.png 1x" srcset="./images/desctop/logo@2x.png 2x" alt="ICECREAM logo"
                         width="199" height="50">
                 </a>
 
@@ -17,11 +17,11 @@
                 <div class="menu-container" id="menu-container" data-menu>
 
                     <ul class="nav-menu list">
-                        <li class="list-item"><a class="is-current" href="./index.html">Home</a></li>
-                        <li class="list-item"><a href="#about-us">About us</a></li>
-                        <li class="list-item"><a href="#how-its-made">How it's made?</a></li>
-                        <li class="list-item"><a href="#our-products">Our products</a></li>
-                        <li class="list-item"><a href="#contacts">Contacts</a></li>
+                        <li class="menu-list-item"><a class="is-current" href="./index.html">Home</a></li>
+                        <li class="menu-list-item"><a href="#about-us">About us</a></li>
+                        <li class="menu-list-item"><a href="#how-its-made">How it's made?</a></li>
+                        <li class="menu-list-item"><a href="#our-products">Our products</a></li>
+                        <li class="menu-list-item"><a href="#contacts">Contacts</a></li>
                     </ul>
                 </div>
 
@@ -36,7 +36,12 @@
             </nav>
 
             <!-- Кнопка героя -->
-            <button class="hero-button button" type="button" data-hero-button>Buy now ></button>
+            
+            <button class="hero-button button" type="button" data-hero-button>
+                Buy now&nbsp&nbsp&nbsp<svg class="icon-arrow-right" width="8" height="10">
+                    <use href="./images/sprite-icons.svg#button-arrow-right"></use>
+                </svg>
+            </button>
 
         </div>
 

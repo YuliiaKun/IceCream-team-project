@@ -1,8 +1,8 @@
 .header {
   position: relative;
   background-color: $bgr-primary-color;
-  font-style: $primary-font;
-  overflow: hidden;
+  font-family: $primary-font;
+  overflow-x: hidden;
 
   &.is-open {
     overflow: visible;
@@ -14,17 +14,14 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-
-  &.section {
-    padding-top: 37px;
-    padding-bottom: 15px;
-    @media screen and (max-width: 767px) {
-      padding-top: 6px;
-    }
+  padding-top: 37px;
+  padding-bottom: 15px;
+  @media screen and (max-width: 767px) {
+    padding-top: 6px;
   }
 }
 
-.nav {
+.nav-hero .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,11 +46,11 @@
   }
 }
 
-.nav-menu {
+.menu-container .nav-menu {
   margin-top: 123px;
 
   @media screen and (max-width: 1199px) {
-    & .list-item {
+    & .menu-list-item {
       border-top: 1px solid #e18298;
       &:last-child {
         border-bottom: 1px solid #e18298;
@@ -67,12 +64,12 @@
     justify-content: space-between;
     margin-top: 0;
 
-    & .list-item:not(:last-child) {
+    & .menu-list-item:not(:last-child) {
       margin-right: 35px;
     }
   }
 
-  & .list-item {
+  & .menu-list-item {
     display: block;
   }
 }
@@ -140,14 +137,15 @@
       display: none;
     }
 
-    .icons {
-      fill: #000000;
-    }
+    // если вдруг нужно быстро ховеры реализовать
+    //.icons {
+    //  fill: #000000;
+    //}
 
-    &:hover .icons,
-    &:focus .icons {
-      fill: #000;
-    }
+    //&:hover .icons,
+    //&:focus .icons {
+    //  fill: #000;
+    //}
   }
 
   @media screen and (min-width: 1200px) {
@@ -239,7 +237,7 @@
   border: 0 solid transparent;
 
   text-align: center;
-  font-style: $primary-font;
+  font-family: $primary-font;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.3125; /* identical to box height 21px*/

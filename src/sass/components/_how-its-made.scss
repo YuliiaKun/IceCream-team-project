@@ -1,11 +1,15 @@
-//mobile
-
 .how-its-made {
   position: absolute;
   padding-top: 125px;
   padding-bottom: 97px;
   margin: 0 auto;
   background-color: $bgr-light;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .title-first {
   margin: 0;
@@ -48,7 +52,8 @@
   text-align: center;
   color: $accent-color;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $btn-hover-color-light;
   }
 }
@@ -67,7 +72,6 @@
 }
 .text-second {
   margin: 0;
-  // margin-bottom: 21px;
   font-family: $primary-font;
   font-weight: 500;
   font-size: 12px;
@@ -75,21 +79,19 @@
   color: $txt-light-color;
   width: 220px;
 }
-// .title {
-//   display: flex;
-//   justify-content: space-between;
-// }
+.pic {
+  margin-top: 20px;
+}
 .image {
   position: absolute;
 }
 .milk {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  // background-image: url('../images/mobile/background_milk@2x.png');
+  background-image: url('../images/mobile/background_milk@2x.png');
   background-size: 100%;
   background-repeat: no-repeat;
-
+  display: flex;
+  flex-direction: column;
   // z-index: 1;
 }
 .number {

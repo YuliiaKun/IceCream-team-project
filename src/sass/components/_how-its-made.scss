@@ -1,21 +1,20 @@
-how-its-made {
-  background-color: $bgr-light;
-  background-size: 100%;
-}
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .how-its-made {
-    // position: absolute;
+    // background-image: url(../images/mobile/section-milk.png);
+    // background-repeat: no-repeat;
+    // width: 100%;
+    // position: relative;
+    background-image: url(../images/mobile/background_milk.png);
+    background-position-y: 48.1%;
+    background-position-x: center;
+    background-repeat: no-repeat;
     padding-top: 125px;
     padding-bottom: 145px;
     margin: 0 auto;
     background-color: $bgr-light;
-    // background-size: 100%;
-
-    // @media screen and (min-width: 320px) and (max-width: 767px) {
-    //   width: 320px;
-    //   padding-left: 20px;
-    //   padding-right: 20px;
+    padding-right: 20px;
   }
+
   .title-first {
     margin: 0;
     margin-bottom: 15px;
@@ -28,7 +27,6 @@ how-its-made {
     color: $txt-primary-color;
   }
   .title-second {
-    position: relative;
     margin: 0;
     margin-bottom: 26px;
     font-family: $accent-font;
@@ -44,8 +42,10 @@ how-its-made {
     display: inline-block;
     margin-top: 21px;
     margin-bottom: 39px;
-    padding: 0 0 0 0;
-    max-width: 176px;
+    align-items: center;
+    padding-right: 37px;
+    padding-left: 37px;
+    width: 176px;
     height: 44px;
     background: $primary-white-color;
     border-radius: 22px;
@@ -53,7 +53,7 @@ how-its-made {
 
     font-family: $primary-font;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.28;
     text-align: center;
     color: $accent-color;
@@ -77,7 +77,6 @@ how-its-made {
     color: $txt-dark-color;
   }
   .text-second {
-    // position: absolute;
     margin: 0;
     font-family: $primary-font;
     font-weight: 500;
@@ -90,11 +89,8 @@ how-its-made {
     margin-top: 20px;
   }
   .milk {
-    position: relative;
-    background-image: url('../images/mobile/background_milk@2x.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
     display: flex;
+    align-items: center;
     flex-direction: column;
   }
   .number {
@@ -124,7 +120,6 @@ how-its-made {
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 70px;
-    padding-left: 20px;
 
     &:not(:last-child) {
       margin-bottom: 38px;
@@ -137,7 +132,6 @@ how-its-made {
     padding-top: 130px;
     padding-bottom: 246px;
     background-color: $bgr-light;
-    // background-size: 100%;
   }
   .container {
     margin: 0;
@@ -171,7 +165,6 @@ how-its-made {
     display: inline-block;
     margin-top: 61px;
     margin-bottom: 66px;
-    // padding: 0 0 0 0;
     min-width: 176px;
     height: 44px;
     background: $primary-white-color;
@@ -221,14 +214,10 @@ how-its-made {
   .title-image {
     margin: 0;
     margin-right: 17px;
-    // margin-top: 92px;
   }
   .pic {
     margin-top: 18px;
   }
-  // .pic + .btn {
-  //   margin-bottom: 62px;
-  // }
   .number {
     margin: 0;
     font-family: $accent-font;
@@ -258,16 +247,21 @@ how-its-made {
     margin-right: 60px;
   }
 }
+//desctop
 @media screen and (min-width: 1200px) {
   .how-its-made {
+    background-image: url(../images/desctop/background_milk.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    // background-image: url(../images/mobile/background_milk.png);
+    // background-position: center right;
+    // background-repeat: no-repeat;
     padding-top: 125px;
     padding-bottom: 310px;
     background-color: $bgr-light;
-    // background-size: 100%;
   }
   .container {
-    margin: 0;
-    width: 1200px;
+    width: 1280px;
     padding-left: 75px;
     padding-right: 75px;
   }
@@ -295,9 +289,8 @@ how-its-made {
   }
   .btn {
     display: inline-block;
-    // margin-top: 61px;
-    // margin-bottom: 66px;
-    // padding: 0 0 0 0;
+    margin-top: 45px;
+    margin-bottom: 135px;
     min-width: 176px;
     height: 44px;
     background: $primary-white-color;
@@ -319,7 +312,7 @@ how-its-made {
   .text-first {
     margin: 0 0 0 0;
     padding-bottom: 31px;
-    width: 330px;
+    width: 463px;
     font-family: $primary-font;
     font-weight: 500;
     font-size: 12px;
@@ -333,12 +326,11 @@ how-its-made {
     font-size: 14px;
     line-height: 1.78;
     color: $txt-light-color;
-    width: 310px;
+    width: 463px;
   }
   .how {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
   }
   .milk {
     margin: 0;
@@ -346,15 +338,12 @@ how-its-made {
   }
   .title-image {
     margin: 0;
-    margin-right: 17px;
+    margin-right: 74px;
     // margin-top: 92px;
   }
   .pic {
     margin-top: 18px;
   }
-  // .pic + .btn {
-  //   margin-bottom: 62px;
-  // }
   .number {
     margin: 0;
     font-family: $accent-font;

@@ -1,12 +1,13 @@
+//изменил паддинг с 86 на 170//
 .feedback {
-  padding-bottom: 86px;
-
+  padding-bottom: 170px;
+  //изменил паддинг с 119 на 197//
   @media screen and (min-width: 768px) {
-    padding-bottom: 119px;
+    padding-bottom: 197px;
   }
-
+  //изменил паддинг с 130 на 234//
   @media screen and (min-width: 1200px) {
-    padding-bottom: 130px;
+    padding-bottom: 234px;
   }
 }
 

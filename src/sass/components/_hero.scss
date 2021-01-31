@@ -1,0 +1,414 @@
+// hero
+// Mobile 320
+
+// Переопределение стилей через свой доп класс/ на container ничего не навешиваем!!!!
+
+.hero {
+  position: relative;
+
+  background-color: $bgr-primary-color;
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
+}
+.hero-section {
+  height: 430px;
+}
+
+.circle {
+  position: absolute;
+  width: 346px;
+  height: 344px;
+  top: 16.53%;
+  left: 11.25%;
+  background-color: $txt-primary-color;
+  border-radius: 50%;
+  z-index: 1;
+
+  @media screen and (max-width: 289px) {
+    left: 50%;
+    transform: translateX(-124px);
+  }
+  @media screen and (min-width: 290px) and (max-width: 767px) {
+    left: 50%;
+    transform: translateX(-124px);
+  }
+}
+.hero-img {
+  position: absolute;
+  width: 171px;
+  height: 410px;
+  top: 2.62%;
+  left: 23.41%;
+  z-index: 2;
+
+  @media screen and (max-width: 289px) {
+    left: 50%;
+    transform: translateX(-92px);
+  }
+  @media screen and (min-width: 290px) and (max-width: 767px) {
+    left: 50%;
+    transform: translateX(-92px);
+  }
+}
+
+.hero-title {
+  position: absolute;
+  display: inline-block;
+  top: 38.45%;
+  left: 6.25%;
+
+  @media screen and (max-width: 289px) {
+    left: 50%;
+    transform: translateX(-109px);
+  }
+  @media screen and (min-width: 290px) and (max-width: 767px) {
+    left: 50%;
+    transform: translateX(-139px);
+  }
+
+  z-index: 3;
+  margin: 0px;
+
+  font-family: $accent-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+}
+
+.title-part {
+  font-family: $accent-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 96.5%;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+
+.hero-text {
+  display: none;
+}
+.hero-section .list {
+  // добавил специфичности, что общий класс .лист не переопределялся у всех
+  display: none;
+}
+.btn-arrow {
+  display: none;
+}
+.hero-milk {
+  display: none;
+}
+.hero-girl {
+  display: none;
+}
+
+.hero-btn {
+  position: absolute;
+  display: block;
+  z-index: 3;
+  width: 62.4px;
+  height: 24px;
+  background-color: $accent-color;
+  border-radius: 20px;
+  border: 0 solid transparent;
+
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: auto;
+  padding-left: 13px;
+  top: 63.35%;
+  left: 6.25%;
+
+  @media screen and (max-width: 289px) {
+    left: 50%;
+    transform: translateX(-140px);
+  }
+  @media screen and (min-width: 290px) and (max-width: 767px) {
+    left: 50%;
+    transform: translateX(-140px);
+  }
+
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.25;
+  color: $primary-white-color;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-btn.second {
+  width: 83px;
+  left: 28.25%;
+  background-color: $primary-white-color;
+  color: $accent-color;
+
+  @media screen and (max-width: 289px) {
+    left: 50%;
+    transform: translateX(-69.6px);
+  }
+  @media screen and (min-width: 290px) and (max-width: 767px) {
+    left: 50%;
+    transform: translateX(-69.6px);
+  }
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background: $btn-hover-color;
+}
+
+.hero-btn.second:hover,
+.hero-btn.second:hover {
+  background: $btn-hover-color-light;
+}
+
+// @media screen and (min-width: 320px) {
+// }
+
+// tablet
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 399px;
+  }
+  .circle {
+    width: 324px;
+    height: 322px;
+    top: 7.77%;
+    left: 39.97%;
+  }
+
+  .hero-img {
+    width: 143px;
+    height: 336px;
+    top: 9.94%;
+    left: 21.91%;
+  }
+
+  .hero-title {
+    top: 25.56%;
+    left: 4.43%;
+
+    font-size: 22px;
+    line-height: 1.14;
+  }
+
+  .title-part {
+    font-size: 34px;
+    line-height: 90.5%;
+  }
+
+  .hero-btn {
+    top: 50.63%;
+    left: 4.43%;
+  }
+  .hero-btn.second {
+    left: 13.6%;
+  }
+
+  .hero-milk {
+    display: block;
+    position: absolute;
+    top: 61.4%;
+    left: 4.43%;
+  }
+
+  .hero-text {
+    position: absolute;
+    display: inline-block;
+    width: 114px;
+    height: 48px;
+    top: 73.18%;
+    left: 20.05%;
+
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 150%;
+    color: $primary-white-color;
+  }
+
+  .btn-arrow {
+    position: absolute;
+    display: block;
+    top: 88%;
+    left: 20.05%;
+    border: none;
+    color: inherit;
+    background-color: transparent;
+    padding: 0px;
+  }
+
+  .hero-section .list {
+    // добавил специфичности
+    position: absolute;
+    display: block;
+    top: 23.56%;
+    left: 88.93%;
+    z-index: 3;
+  }
+  .hero-section .list-item {
+    //доб. спец.
+    position: relative;
+  }
+  .hero-section .list-item:not(:last-child) {
+    //доб. спец.
+    margin-bottom: 13px;
+  }
+
+  .circle-small {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -5%;
+    left: 80%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: $primary-white-color;
+  }
+
+  .list-figures {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: $accent-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 1.14;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+
+  .list-text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 150%;
+    color: $primary-white-color;
+    text-align: right;
+  }
+
+  .hero-girl {
+    display: block;
+    position: absolute;
+    top: 66.67%;
+    left: 72.4%;
+    z-index: 2;
+  }
+}
+
+// Desktop
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-width: 1280px; //from max to min
+    height: 665px;
+  }
+  .hero-title {
+    top: 25.86%;
+    left: 8.91%;
+    font-size: 38px;
+    line-height: 1.16;
+  }
+
+  .title-part {
+    font-size: 58px;
+    line-height: 90.5%;
+  }
+  .circle {
+    width: 538px;
+    height: 538px;
+    top: 7.97%;
+    left: 37.03%;
+  }
+
+  .hero-img-min {
+    min-width: 100%;
+  }
+
+  .hero-img {
+    width: 236px;
+    height: 557px;
+    top: 10.41%;
+    left: 22.12%;
+  }
+
+  .hero-btn {
+    width: 104px;
+    height: 40px;
+    top: 50.23%;
+    left: 8.9%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: auto;
+    padding-left: 22px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .hero-btn.second {
+    left: 18.2%;
+    width: 138px;
+  }
+
+  .hero-milk {
+    display: block;
+    position: absolute;
+    width: 188px;
+    height: 191px;
+    top: 64.66%;
+    left: 5.94%;
+  }
+
+  .hero-text {
+    width: 200px;
+    height: 78px;
+    top: 73.08%;
+    left: 22.97%;
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .btn-arrow {
+    top: 87.82%;
+    left: 22.97%;
+  }
+  .hero-girl {
+    width: 293px;
+    height: 232px;
+    top: 65.26%;
+    left: 68.52%;
+  }
+
+  .list {
+    top: 23.61%;
+    left: 85.15%;
+  }
+
+  .list-figures {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+  .list-text {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .circle-small {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,5 +1,20 @@
+.product {
+  @media screen and (max-width: 767px) {
+    padding-top: 121px;
+    padding-bottom: 98px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+}
 .product-title {
   text-align: center;
+  margin: 0;
 }
 .title-normal {
   font-family: $accent-font;
@@ -40,6 +55,17 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.product-list {
+  @media screen and (max-width: 767px) {
+    margin-top: 31px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 39px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 49px;
+  }
 }
 .product-list .item .item-background {
   border-radius: 24px;
@@ -101,11 +127,14 @@
   }
   @media screen and (min-width: 768px) {
     padding-top: 104px;
-    margin-top: 40px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 210px;
-    margin-top: 40px;
+  }
+}
+.product-list .item:first-child {
+  @media screen and (max-width: 767px) {
+    margin-top: 0px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -128,12 +157,24 @@
   color: $primary-white-color;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 66px;
+  margin-bottom: 30px;
   @media screen and (min-width: 1200px) {
     font-size: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 32px;
   }
 }
+.dots-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+  }
+}
+.dot:not(:last-child) {
+  margin-right: 4px;
+}
+
 .product-description {
   font-family: $primary-font;
   font-size: 14px;

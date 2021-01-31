@@ -1,132 +1,383 @@
-.how-its-made {
-  position: absolute;
-  padding-top: 125px;
-  padding-bottom: 97px;
-  margin: 0 auto;
+how-its-made {
   background-color: $bgr-light;
-
-  @media screen and (min-width: 320px) {
-    width: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-.title-first {
-  margin: 0;
-  margin-bottom: 15px;
-  font-family: $accent-font;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.17;
-  text-align: center;
-  text-transform: uppercase;
-  color: $txt-primary-color;
-}
-.title-second {
-  margin: 0;
-  margin-bottom: 26px;
-  font-family: $accent-font;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $accent-color;
-}
-.btn {
-  display: inline-block;
-  margin-top: 21px;
-  margin-bottom: 39px;
-  padding: 0 0 0 0;
-  max-width: 176px;
-  height: 44px;
-  background: $primary-white-color;
-  border-radius: 22px;
-  border: 0;
-
-  font-family: $primary-font;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.28;
-  text-align: center;
-  color: $accent-color;
-
-  &:hover,
-  &:focus {
-    background-color: $btn-hover-color-light;
-  }
-}
-.title-image {
-  margin-bottom: 46px;
-}
-.text-first {
-  margin: 0;
-  margin-bottom: 32px;
-  width: 220px;
-  font-family: $primary-font;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.58;
-  color: $txt-dark-color;
-}
-.text-second {
-  margin: 0;
-  font-family: $primary-font;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.58;
-  color: $txt-light-color;
-  width: 220px;
-}
-.pic {
-  margin-top: 20px;
-}
-.image {
-  position: absolute;
-}
-.milk {
-  position: relative;
-  background-image: url('../images/mobile/background_milk@2x.png');
   background-size: 100%;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  // z-index: 1;
 }
-.number {
-  margin: 0;
-  margin-top: 16px;
-  font-family: $accent-font;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.14;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $accent-color;
-}
-.text {
-  margin: 0;
-  margin-top: 16px;
-  font-family: $primary-font;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.67;
-  color: $txt-dark-color;
-}
-.item-pic {
-  margin-bottom: 16px;
-}
-.cards {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 70px;
-  padding-left: 20px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .how-its-made {
+    // position: absolute;
+    padding-top: 125px;
+    padding-bottom: 145px;
+    margin: 0 auto;
+    background-color: $bgr-light;
+    // background-size: 100%;
 
-  &:not(:last-child) {
-    margin-bottom: 38px;
+    // @media screen and (min-width: 320px) and (max-width: 767px) {
+    //   width: 320px;
+    //   padding-left: 20px;
+    //   padding-right: 20px;
+  }
+  .title-first {
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+    color: $txt-primary-color;
+  }
+  .title-second {
+    position: relative;
+    margin: 0;
+    margin-bottom: 26px;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 21px;
+    margin-bottom: 39px;
+    padding: 0 0 0 0;
+    max-width: 176px;
+    height: 44px;
+    background: $primary-white-color;
+    border-radius: 22px;
+    border: 0;
+
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.28;
+    text-align: center;
+    color: $accent-color;
+
+    &:hover,
+    &:focus {
+      background-color: $btn-hover-color-light;
+    }
+  }
+  .main-image {
+    margin-bottom: 46px;
+  }
+  .text-first {
+    margin: 0;
+    margin-bottom: 32px;
+    width: 220px;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    color: $txt-dark-color;
+  }
+  .text-second {
+    // position: absolute;
+    margin: 0;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    color: $txt-light-color;
+    width: 220px;
+  }
+  .pic {
+    margin-top: 20px;
+  }
+  .milk {
+    position: relative;
+    background-image: url('../images/mobile/background_milk@2x.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+  }
+  .number {
+    margin: 0;
+    margin-top: 16px;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+  .text {
+    margin: 0;
+    margin-top: 22px;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.67;
+    color: $txt-dark-color;
+  }
+  .item-pic {
+    margin-bottom: 16px;
+  }
+  .cards {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 70px;
+    padding-left: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
   }
 }
 //tablet
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .how-its-made {
+    padding-top: 130px;
+    padding-bottom: 246px;
+    background-color: $bgr-light;
+    // background-size: 100%;
+  }
+  .container {
+    margin: 0;
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  .title-first {
+    margin: 0;
+    margin-bottom: 16px;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: uppercase;
+    color: $txt-primary-color;
+  }
+  .title-second {
+    margin: 0;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 61px;
+    margin-bottom: 66px;
+    // padding: 0 0 0 0;
+    min-width: 176px;
+    height: 44px;
+    background: $primary-white-color;
+    border-radius: 22px;
+    border: 0;
+
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.28;
+    text-align: center;
+    color: $accent-color;
+
+    &:hover,
+    &:focus {
+      background-color: $btn-hover-color-light;
+    }
+  }
+  .text-first {
+    margin: 0 0 0 0;
+    padding-bottom: 31px;
+    width: 330px;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.78;
+    color: $txt-dark-color;
+  }
+  .text-second {
+    margin: 0;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.78;
+    color: $txt-light-color;
+    width: 310px;
+  }
+  .how {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .milk {
+    margin: 0;
+    margin-top: 50px;
+  }
+  .title-image {
+    margin: 0;
+    margin-right: 17px;
+    // margin-top: 92px;
+  }
+  .pic {
+    margin-top: 18px;
+  }
+  // .pic + .btn {
+  //   margin-bottom: 62px;
+  // }
+  .number {
+    margin: 0;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+  .text {
+    margin: 0;
+    margin-top: 13px;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $txt-dark-color;
+  }
+  .item-pic {
+    margin-bottom: 36px;
+  }
+  .card-set {
+    display: flex;
+  }
+  .cards:not(:last-child) {
+    margin-right: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .how-its-made {
+    padding-top: 125px;
+    padding-bottom: 310px;
+    background-color: $bgr-light;
+    // background-size: 100%;
+  }
+  .container {
+    margin: 0;
+    width: 1200px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+  .title-first {
+    margin: 0;
+    margin-bottom: 16px;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.13;
+    text-align: center;
+    text-transform: uppercase;
+    color: $txt-primary-color;
+  }
+  .title-second {
+    margin: 0;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+  .btn {
+    display: inline-block;
+    // margin-top: 61px;
+    // margin-bottom: 66px;
+    // padding: 0 0 0 0;
+    min-width: 176px;
+    height: 44px;
+    background: $primary-white-color;
+    border-radius: 22px;
+    border: 0;
+
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.28;
+    text-align: center;
+    color: $accent-color;
+
+    &:hover,
+    &:focus {
+      background-color: $btn-hover-color-light;
+    }
+  }
+  .text-first {
+    margin: 0 0 0 0;
+    padding-bottom: 31px;
+    width: 330px;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.78;
+    color: $txt-dark-color;
+  }
+  .text-second {
+    margin: 0;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.78;
+    color: $txt-light-color;
+    width: 310px;
+  }
+  .how {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .milk {
+    margin: 0;
+    margin-top: 50px;
+  }
+  .title-image {
+    margin: 0;
+    margin-right: 17px;
+    // margin-top: 92px;
+  }
+  .pic {
+    margin-top: 18px;
+  }
+  // .pic + .btn {
+  //   margin-bottom: 62px;
+  // }
+  .number {
+    margin: 0;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+  .text {
+    margin: 0;
+    margin-top: 13px;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $txt-dark-color;
+  }
+  .item-pic {
+    margin-bottom: 36px;
+  }
+  .card-set {
+    display: flex;
+  }
 }

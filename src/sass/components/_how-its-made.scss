@@ -1,20 +1,11 @@
+//mobile
+
 .how-its-made {
+  position: absolute;
   padding-top: 125px;
   padding-bottom: 97px;
   margin: 0 auto;
   background-color: $bgr-light;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 119px;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-bottom: 130px;
-  }
 }
 .title-first {
   margin: 0;
@@ -26,18 +17,6 @@
   text-align: center;
   text-transform: uppercase;
   color: $txt-primary-color;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 119px;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-bottom: 130px;
-  }
 }
 .title-second {
   margin: 0;
@@ -50,25 +29,13 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $accent-color;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 119px;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-bottom: 130px;
-  }
 }
 .btn {
   display: inline-block;
   margin-top: 21px;
   margin-bottom: 39px;
   padding: 0 0 0 0;
-  min-width: 176px;
+  max-width: 176px;
   height: 44px;
   background: $primary-white-color;
   border-radius: 22px;
@@ -85,35 +52,20 @@
     background-color: $btn-hover-color-light;
   }
 }
-
-.main-image {
+.title-image {
   margin-bottom: 46px;
 }
 .text-first {
   margin: 0;
   margin-bottom: 32px;
-  max-width: 320px;
+  width: 220px;
   font-family: $primary-font;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
   color: $txt-dark-color;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 119px;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-bottom: 130px;
-  }
 }
 .text-second {
-  // position: absolute;
-  // z-index: 0;
   margin: 0;
   // margin-bottom: 21px;
   font-family: $primary-font;
@@ -121,47 +73,28 @@
   font-size: 12px;
   line-height: 1.58;
   color: $txt-light-color;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 119px;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-bottom: 130px;
-  }
+  width: 220px;
 }
 // .title {
 //   display: flex;
 //   justify-content: space-between;
 // }
-
+.image {
+  position: absolute;
+}
 .milk {
-  // position: relative;
-  background-image: url('../images/mobile/background_milk.png');
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // background-image: url('../images/mobile/background_milk@2x.png');
   background-size: 100%;
   background-repeat: no-repeat;
 
   // z-index: 1;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 119px;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-bottom: 130px;
-  }
 }
-
 .number {
   margin: 0;
+  margin-top: 16px;
   font-family: $accent-font;
   font-weight: 400;
   font-size: 36px;
@@ -169,38 +102,15 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $accent-color;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 119px;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-bottom: 130px;
-  }
 }
 .text {
   margin: 0;
+  margin-top: 16px;
   font-family: $primary-font;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.67;
   color: $txt-dark-color;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 119px;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-bottom: 130px;
-  }
 }
 .item-pic {
   margin-bottom: 16px;
@@ -214,15 +124,7 @@
   &:not(:last-child) {
     margin-bottom: 38px;
   }
-  @media screen and (min-width: 768px) {
-    padding-bottom: 119px;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-bottom: 130px;
-  }
+}
+//tablet
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 }

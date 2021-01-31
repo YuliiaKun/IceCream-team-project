@@ -8,7 +8,6 @@
     padding-bottom: 145px;
     margin: 0 auto;
     background-color: $bgr-light;
-    padding-right: 20px;
   }
 
   .title-first {
@@ -130,7 +129,6 @@
     background-color: $bgr-light;
   }
   .container {
-    margin: 0;
     width: 768px;
     padding-left: 34px;
     padding-right: 34px;
@@ -195,8 +193,9 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.78;
+    letter-spacing: 0.04em;
     color: $txt-light-color;
-    width: 310px;
+    width: 340px;
   }
   .how {
     display: flex;

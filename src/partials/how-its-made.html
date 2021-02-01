@@ -5,8 +5,12 @@
                 <h2 class="title-second">How it’s made?</h2>
                 <div class="how">
                 <div class="title-image">
-                    <img class="main-image" src="./images/desctop/cow_and_milk.png" srcset="./images/desctop/cow_and_milk@2x.png 2x"
-                        alt="cow and milk" width="280" height="279">
+                    <picture>
+                        <source srcset="./images/desctop/cow_and_milk.png 1x,./images/desctop/cow_and_milk@2x.png 2x" media="(max-width: 767px)">
+                        <source srcset="./images/desctop/cow_and_milk.png 1x,./images/desctop/cow_and_milk@2x.png 2x" media="(max-width: 768px)">
+                        <source srcset="./images/desctop/cow_and_milk.png 1x,./images/desctop/cow_and_milk@2x.png 2x" media="(max-width: 1200px)">
+                        <img class="main-image" src="./images/desctop/cow_and_milk.png" alt="cow and milk">
+                    </picture>
                 </div> 
                 <div class="milk">
                 <p class="text-first">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem

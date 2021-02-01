@@ -8,9 +8,7 @@
     padding-bottom: 145px;
     margin: 0 auto;
     background-color: $bgr-light;
-    padding-right: 20px;
   }
-
   .title-first {
     margin: 0;
     margin-bottom: 15px;
@@ -38,9 +36,10 @@
     display: inline-block;
     margin-top: 21px;
     margin-bottom: 39px;
-    align-items: center;
-    padding-right: 37px;
-    padding-left: 37px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: auto;
+    padding-left: 13px;
     width: 176px;
     height: 44px;
     background: $primary-white-color;
@@ -51,7 +50,6 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.28;
-    text-align: center;
     color: $accent-color;
 
     &:hover,
@@ -61,6 +59,8 @@
   }
   .main-image {
     margin-bottom: 46px;
+    width: 280px;
+    height: 279px;
   }
   .text-first {
     margin: 0;
@@ -90,7 +90,7 @@
     flex-direction: column;
   }
   .number {
-    margin: 0;
+    // margin: 0;
     margin-top: 16px;
     font-family: $accent-font;
     font-weight: 400;
@@ -101,7 +101,7 @@
     color: $accent-color;
   }
   .text {
-    margin: 0;
+    // margin: 0;
     margin-top: 22px;
     font-family: $primary-font;
     font-weight: 700;
@@ -130,13 +130,16 @@
     background-color: $bgr-light;
   }
   .container {
-    margin: 0;
     width: 768px;
     padding-left: 34px;
     padding-right: 34px;
   }
+  .main-image {
+    width: 340px;
+    height: 339px;
+  }
   .title-first {
-    margin: 0;
+    // margin: 0;
     margin-bottom: 16px;
     font-family: $accent-font;
     font-weight: 400;
@@ -147,7 +150,7 @@
     color: $txt-primary-color;
   }
   .title-second {
-    margin: 0;
+    // margin: 0;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 34px;
@@ -161,17 +164,19 @@
     display: inline-block;
     margin-top: 61px;
     margin-bottom: 66px;
-    min-width: 176px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: auto;
+    padding-left: 13px;
+    width: 176px;
     height: 44px;
     background: $primary-white-color;
     border-radius: 22px;
     border: 0;
-
     font-family: $primary-font;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.28;
-    text-align: center;
     color: $accent-color;
 
     &:hover,
@@ -180,7 +185,7 @@
     }
   }
   .text-first {
-    margin: 0 0 0 0;
+    // margin: 0 0 0 0;
     padding-bottom: 31px;
     width: 330px;
     font-family: $primary-font;
@@ -190,32 +195,32 @@
     color: $txt-dark-color;
   }
   .text-second {
-    margin: 0;
+    // margin: 0;
     font-family: $primary-font;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.78;
+    letter-spacing: 0.04em;
     color: $txt-light-color;
-    width: 310px;
+    width: 340px;
   }
   .how {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
   }
   .milk {
-    margin: 0;
+    // margin: 0;
     margin-top: 50px;
   }
   .title-image {
-    margin: 0;
+    // margin: 0;
     margin-right: 17px;
   }
   .pic {
     margin-top: 18px;
   }
   .number {
-    margin: 0;
+    // margin: 0;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 48px;
@@ -225,7 +230,7 @@
     color: $accent-color;
   }
   .text {
-    margin: 0;
+    // margin: 0;
     margin-top: 13px;
     font-family: $primary-font;
     font-weight: 700;
@@ -248,10 +253,9 @@
   .how-its-made {
     background-image: url(../images/desctop/background_milk.png);
     background-repeat: no-repeat;
-    width: 100%;
-    // background-image: url(../images/mobile/background_milk.png);
-    // background-position: center right;
-    // background-repeat: no-repeat;
+    background-position-y: 42.1%;
+    background-position-x: center;
+    background-size: 100%;
     padding-top: 125px;
     padding-bottom: 310px;
     background-color: $bgr-light;
@@ -261,9 +265,13 @@
     padding-left: 75px;
     padding-right: 75px;
   }
+  .main-image {
+    width: 516px;
+    height: 516px;
+  }
   .title-first {
-    margin: 0;
-    margin-bottom: 16px;
+    // margin: 0;
+    margin-bottom: 15px;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 30px;
@@ -273,7 +281,7 @@
     color: $txt-primary-color;
   }
   .title-second {
-    margin: 0;
+    // margin: 0;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 58px;
@@ -286,7 +294,11 @@
   .btn {
     display: inline-block;
     margin-top: 45px;
-    margin-bottom: 135px;
+    margin-bottom: 146px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: auto;
+    padding-left: 13px;
     min-width: 176px;
     height: 44px;
     background: $primary-white-color;
@@ -306,42 +318,44 @@
     }
   }
   .text-first {
-    margin: 0 0 0 0;
-    padding-bottom: 31px;
+    // margin: 0;
+    padding-bottom: 35px;
     width: 463px;
     font-family: $primary-font;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 1.78;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.04em;
     color: $txt-dark-color;
   }
   .text-second {
-    margin: 0;
+    // margin: 0;
     font-family: $primary-font;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.78;
+    letter-spacing: 0.04em;
     color: $txt-light-color;
     width: 463px;
   }
   .how {
     display: flex;
     justify-content: center;
+    margin-top: 100px;
   }
   .milk {
-    margin: 0;
+    // margin: 0;
     margin-top: 50px;
   }
   .title-image {
-    margin: 0;
+    // margin: 0;
     margin-right: 74px;
-    // margin-top: 92px;
   }
   .pic {
-    margin-top: 18px;
+    margin-top: 37px;
   }
   .number {
-    margin: 0;
+    // margin: 0;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 48px;
@@ -351,18 +365,22 @@
     color: $accent-color;
   }
   .text {
-    margin: 0;
+    // margin: 0;
     margin-top: 13px;
     font-family: $primary-font;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
     color: $txt-dark-color;
   }
   .item-pic {
-    margin-bottom: 36px;
+    margin-bottom: 40px;
   }
   .card-set {
     display: flex;
+  }
+  .cards:not(:last-child) {
+    margin-right: 30px;
   }
 }

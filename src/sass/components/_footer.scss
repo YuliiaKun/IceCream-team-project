@@ -169,15 +169,20 @@
 
 }
 //-------------------DESKTOP VERSION------------------------
-@media screen and (min-width: 1280px) {
-    .footer{
+@media screen and (min-width: 1200px) {
+    .footer {
         background: #FFF5F6;
+        margin-left: auto;
+        padding-right: 116px;
+        padding-left: 114px;
+
     }
 
-    .footer-info{
+    .footer-info {
         display: flex;
         justify-content: space-between;
-        padding: 165px 120px 97px 114px;
+        //padding: 165px 116px 98px 114px;
+        padding-bottom: 97px;
     }
 
     .tagline{
@@ -189,14 +194,20 @@
         & h3 {
             font-size: 18px;
             color: #ffa5ba;
+            letter-spacing: 0.04em;
+            padding-bottom: 15px;
+            margin: 0px auto;
         }
         & h2 {
             font-size: 34px;
             color: #d41443;
+            letter-spacing: 0.06em;
+            margin: 0px auto;
         }
     }
+
     .tagline-part-1{
-        display: block;
+        display: inline;
     }
 
     // .footer-social-icons{
@@ -205,7 +216,8 @@
 
     .icon-box{
         display: flex;
-        padding: 0px 21px 46px 147px;
+        //padding: 0px 21px 57px 147px;
+        margin: 0px auto;
     }
 
     .icon-item:not(:last-child){
@@ -222,7 +234,7 @@
     // }
     .social-contacts{
         display: inline-block;
-        padding-top: 20px;
+        //padding-top: 20px;
         //justify-content: right;
         text-align: right;
         //padding-right: 120px;
@@ -235,6 +247,7 @@
         font-weight: bold;
         font-size: 12px;
         white-space: nowrap;
+        margin: 0px auto;
     }
 
     .contact-text{
@@ -248,8 +261,9 @@
     }
 
     .copyright{
+        width: 100%;
         border-top: 1px solid #E1E1E1;
-        padding: 9px 91px 10px 79px ;
+        padding: 9px auto 10px auto ;
         font-family: DM Sans;
         font-style: normal;
         font-weight: bold;

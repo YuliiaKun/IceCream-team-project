@@ -2,14 +2,13 @@
 
 <section class="hero">
     
-<header class="header" data-header-button>
-    <div class="container">
-        <div class="nav-hero section">
+    <header class="header" data-header-button>
+        <div class="nav-hero container" data-positioning>
             <nav class="nav">
 
                 <!-- Лого -->
                 <a class="logo" href="./index.html">
-                    <img src="./images/desctop/logo.png" srcset="./images/desctop/logo@2x.png 2x" alt="ICECREAM logo"
+                    <img src="./images/desctop/logo.png" srcset="./images/desctop/logo.png 1x" srcset="./images/desctop/logo@2x.png 2x" alt="ICECREAM logo"
                         width="199" height="50">
                 </a>
 
@@ -17,11 +16,11 @@
                 <div class="menu-container" id="menu-container" data-menu>
 
                     <ul class="nav-menu list">
-                        <li class="list-item"><a class="is-current" href="./index.html">Home</a></li>
-                        <li class="list-item"><a href="#about-us">About us</a></li>
-                        <li class="list-item"><a href="#how-its-made">How it's made?</a></li>
-                        <li class="list-item"><a href="#our-products">Our products</a></li>
-                        <li class="list-item"><a href="#contacts">Contacts</a></li>
+                        <li class="menu-list-item"><a class="is-current" href="./index.html">Home</a></li>
+                        <li class="menu-list-item"><a href="#about-us">About us</a></li>
+                        <li class="menu-list-item"><a href="#how-its-made">How it's made?</a></li>
+                        <li class="menu-list-item"><a href="#our-products">Our products</a></li>
+                        <li class="menu-list-item"><a href="#contacts">Contacts</a></li>
                     </ul>
                 </div>
 
@@ -36,39 +35,68 @@
             </nav>
 
             <!-- Кнопка героя -->
-            <button class="hero-button button" type="button" data-hero-button>Buy now ></button>
+            
+            <button class="hero-button button" type="button" data-hero-button>
+                Buy now&nbsp&nbsp&nbsp<svg class="icon-arrow-right" width="8" height="10">
+                    <use href="./images/sprite-icons.svg#button-arrow-right"></use>
+                </svg>
+            </button>
 
         </div>
+    </header>
 
-
+<div class="hero-section container"> <!-- добавил hero-section для того, что навесить высоту и доб. вложеным специфичности-->
+    <h1 class="hero-title">
+        ice cream <br> made with <br> <span class="title-part">passion</span>
+    </h1>
+    <div class="circle">
+        <picture class="hero-img">
+            <source
+                srcset="../src/images/mobile/header_ice_cream.png 1x, ../src/images/mobile/header_ice_cream@2x.png 2x"
+                media="(max-width: 767px)">
+            <source
+                srcset="../src/images/tablet/header_ice_cream.png 1x, ../src/images/tablet/header_ice_cream@2x.png 2x"
+                media="(min-width: 768px)">
+            <source
+                srcset="../src/images/desctop/header_ice_cream.png 1x, ../src/images/desctop/header_ice_cream@2x.png 2x"
+                media="(min-width: 1200px)">
+            <img class="hero-img-min"  src="../src/images/desctop/header_ice_cream.png" alt="ice cream">
+        </picture>
     </div>
-</header>
-
-<div class="container">
-<div class="header-perm"></div>
-<h1 class="hero-title">
-ice cream <br> made with <br> <span class="title-part">passion</span> 
-</h1> 
-<div class="circle">
-    <img class="hero-img" src="../src/images/mobile/header_ice_cream.png" alt="ice cream">
-</div>
-<div class="btn">
-    <a class="hero-btn" href="#">Products</a>
-    <a class="hero-btn second" href="#">How it’s made?</a>
-</div>
-<p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-<button class="btn-arrow">
-<!-- href="./images/arrow-right.png" -->
-</button>
-<ul >
-    <li class="list-item">
-        <p class="hero-figures">16</p>
-        <p class="hero-text">cafes</p>
-    </li>
-    <li class="list-item">
-        <p class="hero-figures">23</p>
-        <p class="hero-text">food trucks</p>
-    </li>
-</ul>
+    <!-- <div class="btn"> -->
+    <a class="hero-btn" href="#our-products">Products</a>
+    <a class="hero-btn second" href="#how-its-made">How it’s made?</a>
+    <!-- </div> -->
+    <picture class="hero-milk">
+        <source srcset="../src/images/tablet/header_milk.png 1x, ../src/images/tablet/header_milk@2x.png 2x"
+            media="(min-width: 768px)">
+        <source srcset="../src/images/desctop/header_milk.png 1x, ../src/images/desctop/header_milk@2x.png 2x"
+            media="(min-width: 1200px)">
+        <img class="hero-img-min" src="../src/images/tablet/header_milk.png" alt="jug with milk">
+    </picture>
+    <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et</p>
+    <button class="btn-arrow">
+        <img src="../src/images/arrow-right.png" alt="arrow" width="18" height="18">
+    </button>
+    <ul class="list">
+        <li class="list-item">
+            <p class="list-figures">16</p>
+            <p class="list-text">cafes</p>
+            <span class="circle-small"></span>
+        </li>
+        <li class="list-item">
+            <p class="list-figures">23</p>
+            <p class="list-text">food trucks</p>
+            <span class="circle-small"></span>
+        </li>
+    </ul>
+    <picture class="hero-girl">
+        <source srcset="../src/images/tablet/header_girl.png 1x, ../src/images/tablet/header_girl@2x.png 2x"
+            media="(min-width: 768px)">
+        <source srcset="../src/images/desctop/header_girl.png 1x, ../src/images/desctop/header_girl@2x.png 2x"
+            media="(min-width: 1200px)">
+        <img class="hero-img-min" src="../src/images/tablet/header_girl.png" alt="girl">
+    </picture>
 </div>
 </section>

@@ -4,7 +4,7 @@
         background: #FFF5F6;
         width: 100%;
     }
-
+​
     .tagline{
         text-transform: uppercase;
         font-family: $accent-font;
@@ -28,35 +28,35 @@
     .tagline-part-1{
         display: flex;
     }
-
+​
     .tagline-part-2{
         display: flex;
     }
-
+​
     // .footer-social-icons{
     //     padding-right: 21px;
     // }
-
+​
     .icon-box{
         display: flex;
         //padding: 0px 21px 46px 147px;
         justify-content: flex-end;
         padding-bottom: 46px;
     }
-
+​
     .icon-item:not(:last-child){
         padding-right: 28px;
     }
-
+​
     // .icon-link{
     //     font-family: Titan One;
     // deisplay:
     // }
-
+​
     // .social-icon{
     //     font-family: Titan One;
     // }
-
+​
     .contact{
         display: inline;
         font-family: DM Sans;
@@ -66,17 +66,17 @@
         font-size: 12px;
         white-space: nowrap;
     }
-
+​
     .contact-text{
         padding-bottom: 43px;
-
+​
 }
     .cell-footer{
         text-decoration: none;
         color: #d41443;
         //padding-right: 20px;
     }
-
+​
     .copyright {
         display: grid;
         border-top: 1px solid #E1E1E1;
@@ -91,9 +91,9 @@
         text-align: center;
         color: #907E82;
     }
-
+​
 }
-
+​
 //------------------------TABLET VERSION-------------------------
 @media screen and (min-width: 768px) {
     .footer{
@@ -104,7 +104,7 @@
         display: flex;
         justify-content: space-between;
     }
-
+​
     .tagline{
         text-transform: uppercase;
         font-family: $accent-font;
@@ -132,30 +132,30 @@
     .tagline-part-1{
         display: block;
     }
-
+​
     .tagline-part-2{
         display: block;
     }
     // .footer-social-icons{
     //     font-family: Titan One;
     // }
-
+​
     .icon-box{
         display: flex;
         justify-content: flex-end;
         padding-bottom: 46px;
         //padding: 0px 21px 46px 147px;
     }
-
+​
     .icon-item:not(:last-child){
         padding-right: 28px;
     }
-
+​
     // .icon-link{
     //     font-family: Titan One;
     // deisplay:
     // }
-
+​
     // .social-icon{
     //     font-family: Titan One;
     // }
@@ -175,17 +175,17 @@
         white-space: nowrap;
         margin: 0;
     }
-
+​
     .contact-text{
         margin: 0;
     }
-
+​
     .cell-footer{
         text-decoration: none;
         color: #d41443;
         //padding-right: 20px;
     }
-
+​
     .copyright{
         border-top: 1px solid #E1E1E1;
         //padding: 22px 91px 18px 79px ;
@@ -200,7 +200,7 @@
         text-align: center;
         color: #907E82;
     }
-
+​
 }
 //-------------------DESKTOP VERSION------------------------
 @media screen and (min-width: 1200px) {
@@ -210,16 +210,16 @@
         width: 100%;
         //padding-right: 116px;
         //padding-left: 114px;
-
+​
     }
-
+​
     .footer-info {
         display: flex;
         justify-content: space-between;
         //padding: 165px 116px 98px 114px;
         padding-bottom: 97px;
     }
-
+​
     .tagline{
         text-transform: uppercase;
         font-family: $accent-font;
@@ -250,11 +250,11 @@
     .tagline-part-2{
         display: inline;
     }
-
+​
     // .footer-social-icons{
     //     font-family: Titan One;
     // }
-
+​
     .icon-box{
         display: flex;
         //padding: 0px 21px 57px 147px;
@@ -266,16 +266,16 @@
         color: #d41443;
         cursor: pointer;
     }
-
+​
     .icon-item:not(:last-child){
         padding-right: 28px;
     }
-
+​
     // .icon-link{
     //     font-family: Titan One;
     // deisplay:
     // }
-
+​
     // .social-icon{
     //     font-family: Titan One;
     // }
@@ -296,20 +296,20 @@
         white-space: nowrap;
         margin: 0px auto;
     }
-
+​
     .contact-text{
         //padding-bottom: 43px;
         font-size: 16px;
         line-height: 186%;
         letter-spacing: 0.02em;
-
+​
 }
     .cell-footer{
         text-decoration: none;
         color: #d41443;
         //padding-right: 20px;
     }
-
+​
     .copyright{
         width: 100%;
         border-top: 1px solid #E1E1E1;

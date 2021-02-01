@@ -1,16 +1,16 @@
 // hero
-// Mobile 320
 
-// Переопределение стилей через свой доп класс/ на container ничего не навешиваем!!!!
+// Mobile
 
 .hero {
   position: relative;
-
   background-color: $bgr-primary-color;
+
   @media screen and (max-width: 767px) {
     overflow: hidden;
   }
 }
+
 .hero-section {
   height: 430px;
 }
@@ -34,6 +34,7 @@
     transform: translateX(-124px);
   }
 }
+
 .hero-img {
   position: absolute;
   width: 171px;
@@ -94,15 +95,16 @@
   display: none;
 }
 .hero-section .list {
-  // добавил специфичности, что общий класс .лист не переопределялся у всех
   display: none;
 }
+
 .btn-arrow {
   display: none;
 }
 .hero-milk {
   display: none;
 }
+
 .hero-girl {
   display: none;
 }
@@ -170,15 +172,13 @@
   background: $btn-hover-color-light;
 }
 
-// @media screen and (min-width: 320px) {
-// }
-
 // tablet
 
 @media screen and (min-width: 768px) {
   .hero {
     height: 399px;
   }
+
   .circle {
     width: 324px;
     height: 322px;
@@ -210,6 +210,7 @@
     top: 50.63%;
     left: 4.43%;
   }
+
   .hero-btn.second {
     left: 13.6%;
   }
@@ -249,19 +250,18 @@
   }
 
   .hero-section .list {
-    // добавил специфичности
     position: absolute;
     display: block;
     top: 23.56%;
     left: 88.93%;
     z-index: 3;
   }
+
   .hero-section .list-item {
-    //доб. спец.
     position: relative;
   }
+
   .hero-section .list-item:not(:last-child) {
-    //доб. спец.
     margin-bottom: 13px;
   }
 
@@ -316,9 +316,10 @@
 
 @media screen and (min-width: 1200px) {
   .hero {
-    min-width: 1280px; //from max to min
+    min-width: 1280px;
     height: 665px;
   }
+
   .hero-title {
     top: 25.86%;
     left: 8.91%;
@@ -329,16 +330,13 @@
       left: 50%;
       transform: translateX(-486px);
     }
-    // @media screen and (min-width: 290px) and (max-width: 767px) {
-    //   left: 50%;
-    //   transform: translateX(-124px);
-    // }
   }
 
   .title-part {
     font-size: 58px;
     line-height: 90.5%;
   }
+
   .circle {
     width: 538px;
     height: 538px;
@@ -350,10 +348,6 @@
       transform: translateX(-126px);
     }
   }
-
-  // .hero-img-min {
-  //   min-width: 100%;
-  // }
 
   .hero-img {
     width: 236px;
@@ -417,6 +411,7 @@
       transform: translateX(-306px);
     }
   }
+
   .btn-arrow {
     top: 87.82%;
     left: 22.97%;
@@ -426,6 +421,7 @@
       transform: translateX(-306px);
     }
   }
+
   .hero-girl {
     width: 293px;
     height: 232px;
@@ -452,6 +448,7 @@
     font-size: 46px;
     line-height: 1.15;
   }
+
   .list-text {
     font-size: 14px;
     line-height: 1.29;

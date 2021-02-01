@@ -15,7 +15,7 @@
             font-size: 18px;
             line-height: 21px;
             color: #ffa5ba;
-            display: flex;
+            //display: flex;
         }
         & h2 {
             font-size: 34px;
@@ -26,7 +26,7 @@
         }
     }
     .tagline-part-1{
-        display: block;
+        display: flex;
     }
 
     .tagline-part-2{
@@ -225,23 +225,29 @@
         font-family: $accent-font;
         font-weight: 400;
         font-style: normal;
-        padding: 0px 31px 43px 20px;
+        //padding: 0px 31px 43px 20px;
         & h3 {
             font-size: 18px;
             color: #ffa5ba;
             letter-spacing: 0.04em;
             padding-bottom: 15px;
             margin: 0px auto;
+            font-size: 30px;
+            line-height: 34px;
         }
         & h2 {
-            font-size: 34px;
             color: #d41443;
             letter-spacing: 0.06em;
             margin: 0px auto;
+            font-size: 58px;
+            line-height: 66px;
+            padding-bottom: 0px;
         }
     }
-
     .tagline-part-1{
+        display: inline;
+    }
+    .tagline-part-2{
         display: inline;
     }
 
@@ -254,6 +260,11 @@
         //padding: 0px 21px 57px 147px;
         margin: 0px auto;
         //padding-bottom: 57px;
+    }
+    .icon-link:hover,
+    .icon-link:focus {
+        color: #d41443;
+        cursor: pointer;
     }
 
     .icon-item:not(:last-child){
@@ -287,13 +298,16 @@
     }
 
     .contact-text{
-        padding-bottom: 43px;
+        //padding-bottom: 43px;
+        font-size: 16px;
+        line-height: 186%;
+        letter-spacing: 0.02em;
 
 }
     .cell-footer{
         text-decoration: none;
         color: #d41443;
-        padding-right: 20px;
+        //padding-right: 20px;
     }
 
     .copyright{
@@ -303,10 +317,11 @@
         padding-top: 9px;
         padding-bottom: 10px;
         font-family: DM Sans;
+        letter-spacing: 0.02em;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
-        line-height: 152%;
+        line-height: 186%;
         text-align: center;
         color: #907E82;
         margin: 0px;

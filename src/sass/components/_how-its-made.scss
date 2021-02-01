@@ -1,7 +1,7 @@
 @media screen and (max-width: 767px) {
   .how-its-made {
     background-image: url(../images/mobile/background_milk.png);
-    background-position-y: 48.1%;
+    background-position-y: 46.1%;
     background-position-x: center;
     background-repeat: no-repeat;
     padding-top: 125px;
@@ -11,7 +11,7 @@
   }
   .title-first {
     margin: 0;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 18px;
@@ -22,7 +22,7 @@
   }
   .title-second {
     margin: 0;
-    margin-bottom: 26px;
+    padding-bottom: 26px;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 34px;
@@ -32,16 +32,18 @@
     text-transform: uppercase;
     color: $accent-color;
   }
+  .btn-icon {
+    margin-left: 10px;
+  }
   .btn {
     display: inline-block;
     margin-top: 21px;
     margin-bottom: 39px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-right: auto;
-    padding-left: 13px;
-    width: 176px;
-    height: 44px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 37px;
+    padding-left: 37px;
+    min-width: 176px;
     background: $primary-white-color;
     border-radius: 22px;
     border: 0;
@@ -64,7 +66,7 @@
   }
   .text-first {
     margin: 0;
-    margin-bottom: 32px;
+    padding-bottom: 32px;
     width: 220px;
     font-family: $primary-font;
     font-weight: 500;
@@ -82,7 +84,7 @@
     width: 220px;
   }
   .pic {
-    margin-top: 20px;
+    padding-top: 20px;
   }
   .milk {
     display: flex;
@@ -90,8 +92,8 @@
     flex-direction: column;
   }
   .number {
-    // margin: 0;
-    margin-top: 16px;
+    margin: 0;
+    padding-top: 16px;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 36px;
@@ -101,8 +103,8 @@
     color: $accent-color;
   }
   .text {
-    // margin: 0;
-    margin-top: 22px;
+    margin: 0;
+    padding-top: 22px;
     font-family: $primary-font;
     font-weight: 700;
     font-size: 12px;
@@ -110,7 +112,7 @@
     color: $txt-dark-color;
   }
   .item-pic {
-    margin-bottom: 16px;
+    padding-bottom: 16px;
   }
   .cards {
     padding-top: 0;
@@ -118,7 +120,7 @@
     padding-right: 70px;
 
     &:not(:last-child) {
-      margin-bottom: 38px;
+      padding-bottom: 38px;
     }
   }
 }
@@ -139,8 +141,8 @@
     height: 339px;
   }
   .title-first {
-    // margin: 0;
-    margin-bottom: 16px;
+    margin: 0;
+    padding-bottom: 16px;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 26px;
@@ -150,7 +152,8 @@
     color: $txt-primary-color;
   }
   .title-second {
-    // margin: 0;
+    margin: 0;
+    padding-bottom: 50px;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 34px;
@@ -164,12 +167,11 @@
     display: inline-block;
     margin-top: 61px;
     margin-bottom: 66px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-right: auto;
-    padding-left: 13px;
-    width: 176px;
-    height: 44px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 37px;
+    padding-left: 37px;
+    min-width: 176px;
     background: $primary-white-color;
     border-radius: 22px;
     border: 0;
@@ -184,8 +186,11 @@
       background-color: $btn-hover-color-light;
     }
   }
+  .btn-icon {
+    margin-left: 10px;
+  }
   .text-first {
-    // margin: 0 0 0 0;
+    margin: 0;
     padding-bottom: 31px;
     width: 330px;
     font-family: $primary-font;
@@ -195,7 +200,7 @@
     color: $txt-dark-color;
   }
   .text-second {
-    // margin: 0;
+    margin: 0;
     font-family: $primary-font;
     font-weight: 500;
     font-size: 14px;
@@ -209,18 +214,18 @@
     justify-content: center;
   }
   .milk {
-    // margin: 0;
+    margin: 0;
     margin-top: 50px;
   }
   .title-image {
-    // margin: 0;
-    margin-right: 17px;
+    margin: 0;
+    padding-right: 17px;
   }
   .pic {
-    margin-top: 18px;
+    padding-top: 18px;
   }
   .number {
-    // margin: 0;
+    margin: 0;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 48px;
@@ -230,8 +235,8 @@
     color: $accent-color;
   }
   .text {
-    // margin: 0;
-    margin-top: 13px;
+    margin: 0;
+    padding-top: 24px;
     font-family: $primary-font;
     font-weight: 700;
     font-size: 14px;
@@ -270,8 +275,8 @@
     height: 516px;
   }
   .title-first {
-    // margin: 0;
-    margin-bottom: 15px;
+    margin: 0;
+    padding-bottom: 15px;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 30px;
@@ -281,7 +286,7 @@
     color: $txt-primary-color;
   }
   .title-second {
-    // margin: 0;
+    margin: 0;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 58px;
@@ -295,12 +300,11 @@
     display: inline-block;
     margin-top: 45px;
     margin-bottom: 146px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-right: auto;
-    padding-left: 13px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 37px;
+    padding-left: 37px;
     min-width: 176px;
-    height: 44px;
     background: $primary-white-color;
     border-radius: 22px;
     border: 0;
@@ -317,8 +321,11 @@
       background-color: $btn-hover-color-light;
     }
   }
+  .btn-icon {
+    margin-left: 10px;
+  }
   .text-first {
-    // margin: 0;
+    margin: 0;
     padding-bottom: 35px;
     width: 463px;
     font-family: $primary-font;
@@ -329,7 +336,7 @@
     color: $txt-dark-color;
   }
   .text-second {
-    // margin: 0;
+    margin: 0;
     font-family: $primary-font;
     font-weight: 500;
     font-size: 14px;
@@ -341,21 +348,21 @@
   .how {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    padding-top: 100px;
   }
   .milk {
-    // margin: 0;
-    margin-top: 50px;
+    margin: 0;
+    padding-top: 50px;
   }
   .title-image {
-    // margin: 0;
-    margin-right: 74px;
+    margin: 0;
+    padding-right: 74px;
   }
   .pic {
-    margin-top: 37px;
+    padding-top: 37px;
   }
   .number {
-    // margin: 0;
+    margin: 0;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 48px;
@@ -365,8 +372,8 @@
     color: $accent-color;
   }
   .text {
-    // margin: 0;
-    margin-top: 13px;
+    margin: 0;
+    padding-top: 15px;
     font-family: $primary-font;
     font-weight: 700;
     font-size: 16px;
@@ -375,7 +382,7 @@
     color: $txt-dark-color;
   }
   .item-pic {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
   .card-set {
     display: flex;

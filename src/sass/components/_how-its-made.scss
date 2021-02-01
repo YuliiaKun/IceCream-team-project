@@ -1,0 +1,394 @@
+@media screen and (max-width: 767px) {
+  .how-its-made {
+    background-image: url(../images/mobile/background_milk.png);
+    background-position-y: 49.1%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    padding-top: 125px;
+    padding-bottom: 97px;
+    margin: 0 auto;
+    background-color: $bgr-light;
+  }
+  .title-first {
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+    color: $txt-primary-color;
+  }
+  .title-second {
+    margin: 0;
+    margin-bottom: 26px;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+  .btn-icon {
+    margin-left: 10px;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 21px;
+    margin-bottom: 39px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 37px;
+    padding-left: 37px;
+    min-width: 176px;
+    background: $primary-white-color;
+    border-radius: 22px;
+    border: 0;
+
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    color: $accent-color;
+
+    &:hover,
+    &:focus {
+      background-color: $btn-hover-color-light;
+    }
+  }
+  .main-image {
+    margin-bottom: 46px;
+    width: 280px;
+    height: 279px;
+  }
+  .text-first {
+    margin: 0;
+    margin-bottom: 32px;
+    width: 220px;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    color: $txt-dark-color;
+  }
+  .text-second {
+    margin: 0;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+    color: $txt-light-color;
+    width: 220px;
+  }
+  .pic {
+    margin-top: 20px;
+  }
+  .milk {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .number {
+    margin: 0;
+    margin-bottom: 21px;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+  .text {
+    margin: 0;
+    // padding-top: 22px;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.67;
+    color: $txt-dark-color;
+  }
+  .item-pic {
+    margin-bottom: 16px;
+  }
+  .cards {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 70px;
+
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
+}
+//tablet
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .how-its-made {
+    padding-top: 130px;
+    padding-bottom: 140px;
+    background-color: $bgr-light;
+  }
+  .container {
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  .main-image {
+    width: 340px;
+    height: 339px;
+  }
+  .title-first {
+    margin: 0;
+    margin-bottom: 16px;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: uppercase;
+    color: $txt-primary-color;
+  }
+  .title-second {
+    margin: 0;
+    margin-bottom: 50px;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 61px;
+    margin-bottom: 66px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 37px;
+    padding-left: 37px;
+    min-width: 176px;
+    background: $primary-white-color;
+    border-radius: 22px;
+    border: 0;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.28;
+    color: $accent-color;
+
+    &:hover,
+    &:focus {
+      background-color: $btn-hover-color-light;
+    }
+  }
+  .btn-icon {
+    margin-left: 10px;
+  }
+  .text-first {
+    margin: 0;
+    margin-bottom: 31px;
+    width: 330px;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.78;
+    color: $txt-dark-color;
+  }
+  .text-second {
+    margin: 0;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.78;
+    letter-spacing: 0.04em;
+    color: $txt-light-color;
+    width: 340px;
+  }
+  .how {
+    display: flex;
+    justify-content: center;
+  }
+  .milk {
+    margin: 0;
+    margin-top: 50px;
+  }
+  .title-image {
+    margin: 0;
+    margin-right: 17px;
+  }
+  .pic {
+    margin-top: 18px;
+  }
+  .number {
+    margin: 0;
+    margin-bottom: 13px;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+  .text {
+    margin: 0;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $txt-dark-color;
+  }
+  .item-pic {
+    margin-bottom: 36px;
+  }
+  .card-set {
+    display: flex;
+  }
+  .cards:not(:last-child) {
+    margin-right: 60px;
+  }
+}
+//desctop
+@media screen and (min-width: 1200px) {
+  .how-its-made {
+    background-image: url(../images/desctop/background_milk.png);
+    background-repeat: no-repeat;
+    background-position-y: 42.1%;
+    background-position-x: center;
+    background-size: 100%;
+    padding-top: 125px;
+    padding-bottom: 140px;
+    background-color: $bgr-light;
+  }
+  .container {
+    width: 1280px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+  .main-image {
+    width: 516px;
+    height: 516px;
+  }
+  .title-first {
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.13;
+    text-align: center;
+    text-transform: uppercase;
+    color: $txt-primary-color;
+  }
+  .title-second {
+    margin: 0;
+    margin-bottom: 100px;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 45px;
+    margin-bottom: 146px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 37px;
+    padding-left: 37px;
+    min-width: 176px;
+    background: $primary-white-color;
+    border-radius: 22px;
+    border: 0;
+
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.28;
+    text-align: center;
+    color: $accent-color;
+
+    &:hover,
+    &:focus {
+      background-color: $btn-hover-color-light;
+    }
+  }
+  .btn-icon {
+    margin-left: 10px;
+  }
+  .text-first {
+    margin: 0;
+    margin-bottom: 35px;
+    width: 463px;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+    color: $txt-dark-color;
+  }
+  .text-second {
+    margin: 0;
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.78;
+    letter-spacing: 0.04em;
+    color: $txt-light-color;
+    width: 463px;
+  }
+  .how {
+    display: flex;
+    justify-content: center;
+    // padding-top: 100px;
+  }
+  .milk {
+    margin: 0;
+    margin-top: 50px;
+  }
+  .title-image {
+    margin: 0;
+    margin-right: 74px;
+  }
+  .pic {
+    margin-top: 37px;
+  }
+  .number {
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: $accent-font;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+  .text {
+    margin: 0;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+    color: $txt-dark-color;
+  }
+  .item-pic {
+    margin-bottom: 40px;
+  }
+  .card-set {
+    display: flex;
+  }
+  .cards:not(:last-child) {
+    margin-right: 30px;
+  }
+}

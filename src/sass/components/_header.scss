@@ -186,9 +186,10 @@
     &.is-open {
       display: block;
       transform: translateX(0);
+      opacity: 1;
     }
 
-    display: block; //display: none;
+    display: block;
     position: absolute;
     z-index: 11;
     top: 0;
@@ -196,7 +197,8 @@
     width: 250px;
     height: 100vh;
     transform: translateX(200%);
-    transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
   }
 
   @media screen and (min-width: 1200px) {

@@ -54,7 +54,7 @@
 }
 .contacts-card {
   width: 220px;
-  height: 427px;
+  min-height: 427px;
   padding-top: 43px;
   padding-bottom: 43px;
   padding-right: 20px;
@@ -263,9 +263,10 @@
   display: flex;
   align-items: center;
   text-align: center;
-  width: 161px;
-  height: 44px;
+  min-width: 161px;
+  min-height: 44px;
   padding-left: 17px;
+  padding-right: 17px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
@@ -289,10 +290,11 @@
   display: flex;
   align-items: center;
   text-align: center;
-  width: 161px;
-  height: 44px;
+  min-width: 161px;
+  min-height: 44px;
   display: inline-block;
-  padding-left: 17px;
+  padding-left: 32px;
+  padding-right: 32px;
   margin-left: auto;
   margin-right: auto;
   border: none;

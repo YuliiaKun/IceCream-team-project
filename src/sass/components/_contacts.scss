@@ -10,41 +10,17 @@
     }
   }
 }
-.contacts-worktime {
-  position: relative;
-  margin-top: 25px;
-
-  @media screen and (min-width: 768px) {
-    margin-top: 30px;
-  }
-}
-.worktime-list {
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
-}
-.contacts-worktime .worktime-list:first-child {
-  margin-bottom: 10px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 16px;
-  }
-}
-
-.worktime-list {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
 
 .contacts-list {
   margin-bottom: 54px;
   position: relative;
-  bottom: 80px;
+  bottom: 90px;
+  justify-content: center;
 
   @media screen and (min-width: 768px) {
     display: flex;
     margin-bottom: 81px;
+    bottom: 80px;
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 86px;
@@ -78,14 +54,13 @@
 }
 .contacts-card {
   width: 220px;
-  height: 427px;
-  padding-top: 40px;
+  min-height: 427px;
+  padding-top: 43px;
   padding-bottom: 43px;
   padding-right: 20px;
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
-  // border: 1px solid #e1e1e1;
   border-radius: 24px;
   background: $primary-white-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -113,9 +88,7 @@
     }
   }
 }
-.contacts-card p {
-  display: block;
-}
+
 .contacts-card:not(:last-child) {
   margin-bottom: 20px;
   @media screen and(min-width:768px) {
@@ -127,6 +100,9 @@
   position: relative;
   @media screen and(min-width:768px) {
     margin-top: 30px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-top: 32px;
   }
 
   & h4 {
@@ -159,18 +135,14 @@
     line-height: 1.5;
     color: $txt-light-color;
     margin-top: 0px;
-    margin-bottom: 0px;
-    padding-bottom: 25px;
+    margin-bottom: 50px;
 
     @media screen and(min-width:768px) {
-      // margin-top: 30px;
-      padding-bottom: 30px;
+      margin-bottom: 50px;
       font-size: 14px;
       line-height: 1.66;
     }
     @media screen and(min-width:1200px) {
-      // margin-top: 30px;
-      // padding-bottom: 30px;
       font-size: 16px;
       line-height: 1.83;
     }
@@ -185,7 +157,7 @@
   line-height: 1.86;
   color: $txt-dark-color;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 2px;
 
   @media screen and(min-width:768px) {
     font-size: 14px;
@@ -212,6 +184,15 @@
     font-size: 16px;
   }
 }
+.last {
+  margin-bottom: 10px;
+  @media screen and(min-width:768px) {
+    margin-bottom: 16px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 15px;
+  }
+}
 
 .contacts-location::after {
   content: '';
@@ -220,29 +201,26 @@
   height: 0px;
   border: 1px solid #e1e1e1;
   border-radius: 2px;
+  bottom: -25px;
 }
 
 .contacts-info {
   position: relative;
-  padding-top: 25px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
-
-  @media screen and(min-width: 768px) {
-    padding-top: 30px;
-  }
 }
 .contacts-info::before {
   content: '';
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 0px;
   border: 1px solid #e1e1e1;
   border-radius: 2px;
+  bottom: 25px;
 }
 .contacts-info .link {
   margin: 0px;
-  padding-top: 25px;
   font-family: $primary-font;
   font-style: normal;
   font-weight: 500;
@@ -251,12 +229,10 @@
   color: $txt-light-color;
 
   @media screen and(min-width:768px) {
-    padding-top: 30px;
     font-size: 14px;
     line-height: 1.83;
   }
   @media screen and(min-width:1200px) {
-    padding-top: 30px;
     font-size: 16px;
   }
 }
@@ -267,11 +243,12 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  bottom: 80px;
+  bottom: 90px;
 
   @media screen and(min-width:768px) {
     flex-direction: row;
     justify-content: center;
+    bottom: 80px;
   }
   @media screen and(min-width:1200px) {
     bottom: 100px;
@@ -286,9 +263,10 @@
   display: flex;
   align-items: center;
   text-align: center;
-  width: 161px;
-  height: 44px;
+  min-width: 161px;
+  min-height: 44px;
   padding-left: 17px;
+  padding-right: 17px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
@@ -312,10 +290,11 @@
   display: flex;
   align-items: center;
   text-align: center;
-  width: 161px;
-  height: 44px;
+  min-width: 161px;
+  min-height: 44px;
   display: inline-block;
-  padding-left: 17px;
+  padding-left: 32px;
+  padding-right: 32px;
   margin-left: auto;
   margin-right: auto;
   border: none;

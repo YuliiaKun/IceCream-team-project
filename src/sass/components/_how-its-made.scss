@@ -1,17 +1,17 @@
 @media screen and (max-width: 767px) {
   .how-its-made {
     background-image: url(../images/mobile/background_milk.png);
-    background-position-y: 46.1%;
+    background-position-y: 49.1%;
     background-position-x: center;
     background-repeat: no-repeat;
     padding-top: 125px;
-    padding-bottom: 145px;
+    padding-bottom: 97px;
     margin: 0 auto;
     background-color: $bgr-light;
   }
   .title-first {
     margin: 0;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 18px;
@@ -22,7 +22,7 @@
   }
   .title-second {
     margin: 0;
-    padding-bottom: 26px;
+    margin-bottom: 26px;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 34px;
@@ -37,7 +37,6 @@
   }
   .btn {
     display: inline-block;
-    margin-top: 21px;
     margin-bottom: 39px;
     padding-top: 13px;
     padding-bottom: 13px;
@@ -60,13 +59,12 @@
     }
   }
   .main-image {
-    margin-bottom: 46px;
     width: 280px;
     height: 279px;
   }
   .text-first {
     margin: 0;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
     width: 220px;
     font-family: $primary-font;
     font-weight: 500;
@@ -84,7 +82,8 @@
     width: 220px;
   }
   .pic {
-    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 21px;
   }
   .milk {
     display: flex;
@@ -93,7 +92,7 @@
   }
   .number {
     margin: 0;
-    padding-top: 16px;
+    margin-bottom: 21px;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 36px;
@@ -104,7 +103,7 @@
   }
   .text {
     margin: 0;
-    padding-top: 22px;
+    width: 230px;
     font-family: $primary-font;
     font-weight: 700;
     font-size: 12px;
@@ -112,15 +111,14 @@
     color: $txt-dark-color;
   }
   .item-pic {
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
   .cards {
     padding-top: 0;
     padding-bottom: 0;
-    padding-right: 70px;
 
     &:not(:last-child) {
-      padding-bottom: 38px;
+      margin-bottom: 38px;
     }
   }
 }
@@ -128,13 +126,8 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .how-its-made {
     padding-top: 130px;
-    padding-bottom: 246px;
+    padding-bottom: 140px;
     background-color: $bgr-light;
-  }
-  .container {
-    width: 768px;
-    padding-left: 34px;
-    padding-right: 34px;
   }
   .main-image {
     width: 340px;
@@ -142,7 +135,7 @@
   }
   .title-first {
     margin: 0;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 26px;
@@ -153,7 +146,7 @@
   }
   .title-second {
     margin: 0;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 34px;
@@ -165,7 +158,6 @@
   }
   .btn {
     display: inline-block;
-    margin-top: 61px;
     margin-bottom: 66px;
     padding-top: 13px;
     padding-bottom: 13px;
@@ -191,7 +183,7 @@
   }
   .text-first {
     margin: 0;
-    padding-bottom: 31px;
+    margin-bottom: 31px;
     width: 330px;
     font-family: $primary-font;
     font-weight: 500;
@@ -211,7 +203,6 @@
   }
   .how {
     display: flex;
-    justify-content: center;
   }
   .milk {
     margin: 0;
@@ -219,13 +210,15 @@
   }
   .title-image {
     margin: 0;
-    padding-right: 17px;
+    margin-right: 17px;
   }
   .pic {
-    padding-top: 18px;
+    margin-top: 18px;
+    margin-bottom: 61px;
   }
   .number {
     margin: 0;
+    margin-bottom: 13px;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 48px;
@@ -236,7 +229,6 @@
   }
   .text {
     margin: 0;
-    padding-top: 24px;
     font-family: $primary-font;
     font-weight: 700;
     font-size: 14px;
@@ -253,22 +245,17 @@
     margin-right: 60px;
   }
 }
-//desctop
+//desktop
 @media screen and (min-width: 1200px) {
   .how-its-made {
     background-image: url(../images/desctop/background_milk.png);
     background-repeat: no-repeat;
-    background-position-y: 42.1%;
+    background-position-y: 50.1%;
     background-position-x: center;
     background-size: 100%;
     padding-top: 125px;
-    padding-bottom: 310px;
+    padding-bottom: 140px;
     background-color: $bgr-light;
-  }
-  .container {
-    width: 1280px;
-    padding-left: 75px;
-    padding-right: 75px;
   }
   .main-image {
     width: 516px;
@@ -276,7 +263,7 @@
   }
   .title-first {
     margin: 0;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 30px;
@@ -287,6 +274,7 @@
   }
   .title-second {
     margin: 0;
+    margin-bottom: 100px;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 58px;
@@ -298,7 +286,6 @@
   }
   .btn {
     display: inline-block;
-    margin-top: 45px;
     margin-bottom: 146px;
     padding-top: 13px;
     padding-bottom: 13px;
@@ -326,7 +313,7 @@
   }
   .text-first {
     margin: 0;
-    padding-bottom: 35px;
+    margin-bottom: 35px;
     width: 463px;
     font-family: $primary-font;
     font-weight: 500;
@@ -347,22 +334,22 @@
   }
   .how {
     display: flex;
-    justify-content: center;
-    padding-top: 100px;
   }
   .milk {
     margin: 0;
-    padding-top: 50px;
+    margin-top: 50px;
   }
   .title-image {
     margin: 0;
-    padding-right: 74px;
+    margin-right: 74px;
   }
   .pic {
-    padding-top: 37px;
+    margin-top: 37px;
+    margin-bottom: 45px;
   }
   .number {
     margin: 0;
+    margin-bottom: 24px;
     font-family: $accent-font;
     font-weight: 400;
     font-size: 48px;
@@ -373,7 +360,6 @@
   }
   .text {
     margin: 0;
-    padding-top: 15px;
     font-family: $primary-font;
     font-weight: 700;
     font-size: 16px;
@@ -382,7 +368,7 @@
     color: $txt-dark-color;
   }
   .item-pic {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
   .card-set {
     display: flex;

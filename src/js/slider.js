@@ -3,6 +3,10 @@ $(document).ready(function () {
             autoplay: true,
             autoplaySpeed: 3500,
             arrows: false,
-            pauseOnHover: true
+          pauseOnHover: true,
+            dots: true,
+            customPaging: function() {
+                return '<a></a>';
+            }
       });
     });

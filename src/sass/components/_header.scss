@@ -159,16 +159,6 @@
     & .icon-close {
       display: none;
     }
-
-    // если вдруг нужно быстро ховеры реализовать
-    //.icons {
-    //  fill: #000000;
-    //}
-
-    //&:hover .icons,
-    //&:focus .icons {
-    //  fill: #000000;
-    //}
   }
 
   @media screen and (min-width: 1200px) {
@@ -194,8 +184,14 @@
     z-index: 11;
     top: 0;
     right: 0;
+    @media screen and (max-width: 767px) {
+      height: 501px;
+    }
+    @media screen and (min-width: 768px) {
+      height: 399px;
+    }
     width: 250px;
-    height: 100vh;
+
     transform: translateX(200%);
     opacity: 0;
     transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;

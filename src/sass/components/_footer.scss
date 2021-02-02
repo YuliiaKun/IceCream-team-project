@@ -4,6 +4,7 @@
         background: #FFF5F6;
         width: 100%;
         border-bottom: 1px solid #E1E1E1;
+        padding-top: 23px;
     }
     .tagline{
         text-transform: uppercase;
@@ -79,6 +80,7 @@
         background: #FFF5F6;
         width: 100%;
         border-bottom: 1px solid #E1E1E1;
+        padding-top: 85px;
     }
     .footer-info{
         display: flex;
@@ -163,6 +165,7 @@
         background: #FFF5F6;
         width: 100%;
         border-bottom: 1px solid #E1E1E1;
+        padding-top: 65px;
     }
     .footer-info {
         display: flex;
@@ -203,8 +206,12 @@
         display: flex;
         margin: 0px auto;
     }
+    .social-icon{
+        //fill="#fea5bb" style="fill: var(--color3, #fea5bb)"
+        fill: #FFA5BA;
+    }
     .social-icon:hover {
-        color: #D41443;
+         fill: #D41443;
         //cursor: auto;
     }
 

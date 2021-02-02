@@ -17,6 +17,14 @@
   }
 }
 
+.header .menu-button button {
+  outline: none;
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+}
+
 .nav-hero {
   position: absolute;
   top: 0;
@@ -177,6 +185,7 @@
       display: block;
       transform: translateX(0);
       opacity: 1;
+      pointer-events: all;
     }
 
     display: block;
@@ -191,10 +200,10 @@
       height: 399px;
     }
     width: 250px;
-
     transform: translateX(200%);
     opacity: 0;
     transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+    pointer-events: none;
   }
 
   @media screen and (min-width: 1200px) {

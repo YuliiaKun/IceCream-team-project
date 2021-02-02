@@ -38,6 +38,9 @@
         justify-content: flex-end;
         margin-bottom: 46px;
     }
+    .social-icon{
+        fill: $txt-primary-color;
+    }
     .icon-item:not(:last-child){
         margin-right: 28px;
     }
@@ -123,6 +126,9 @@
     }
     .icon-item:not(:last-child){
         margin-right: 28px;
+    }
+    .social-icon{
+        fill: $txt-primary-color;
     }
     .social-contacts{
         display: inline-block;

@@ -93,6 +93,13 @@ img {
   overflow: visible;
 }
 
+.header .menu-button button {
+  outline: none;
+}
+.header .menu-button button:focus, .header .menu-button button:hover {
+  outline: none;
+}
+
 .nav-hero {
   position: absolute;
   top: 0;
@@ -253,15 +260,26 @@ img {
     top: 0;
     right: 0;
     width: 250px;
-    height: 100vh;
     transform: translateX(200%);
     opacity: 0;
     transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+    pointer-events: none;
   }
   .menu-container.is-open {
     display: block;
     transform: translateX(0);
     opacity: 1;
+    pointer-events: all;
+  }
+}
+@media screen and (max-width: 1199px) and (max-width: 767px) {
+  .menu-container {
+    height: 501px;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .menu-container {
+    height: 399px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -460,7 +478,7 @@ img {
   border: 0 solid transparent;
   padding-top: 7px;
   padding-bottom: 7px;
-  padding-right: auto;
+  padding-right: 13px;
   padding-left: 13px;
   top: 63.35%;
   left: 6.25%;
@@ -705,7 +723,7 @@ img {
     left: 8.9%;
     padding-top: 11px;
     padding-bottom: 11px;
-    padding-right: auto;
+    padding-right: 11px;
     padding-left: 22px;
     font-size: 14px;
     line-height: 1.29;

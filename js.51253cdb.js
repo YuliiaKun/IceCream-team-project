@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./..\\images\\mobile\\background_milk.png":[["background_milk.482e4a6e.png","tF0C"],"tF0C"],"./..\\images\\desctop\\background_milk.png":[["background_milk.059d7f2b.png","aYn9"],"aYn9"],"./..\\images\\“.svg":[["“.413f146a.svg","qkKS"],"qkKS"],"./..\\images\\circle3red.svg":[["circle3red.fc5bc567.svg","BVfW"],"BVfW"],"./..\\images\\home.svg":[["home.61d42fb7.svg","VKcl"],"VKcl"],"./..\\images\\desctop\\background_contacts.png":[["background_contacts.c80137d4.png","hoL4"],"hoL4"],"./..\\images\\desctop\\background_contacts@2x.png":[["background_contacts@2x.8f0de838.png","ZRRG"],"ZRRG"]}],"QvaY":[function(require,module,exports) {
 "use strict";require("../sass/main.scss");
 },{"../sass/main.scss":"clu1"}]},{},["QvaY"], null)
-//# sourceMappingURL=/IceCream-team-project/js.6598fa27.js.map
+//# sourceMappingURL=/IceCream-team-project/js.51253cdb.js.map
